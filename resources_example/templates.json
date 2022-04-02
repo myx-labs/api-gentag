@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Example Name",
+    "category": "examplecategory",
+    "type": "exampletype",
+    "variant": 1,
+    "text": {
+      "colour": "#C8C8C8",
+      "font": {
+        "size": "5px",
+        "family": "Pixeled"
+      },
+      "anchorPoint": [29, 36],
+      "maxWidth": 40
+    },
+    "imagePath": "template_example.png",
+    "previewAssetId": 3276927212
+  }
+]
