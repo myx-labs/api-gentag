@@ -1,5 +1,5 @@
 {
-  "name": "rocessorise-api",
+  "name": "api-gentag",
   "version": "1.2.0",
   "description": "",
   "type": "module",
@@ -19,7 +19,7 @@
     "canvas": "^2.9.1",
     "dotenv-safe": "^8.2.0",
     "fast-xml-parser": "^4.0.7",
-    "fastify": "^3.27.4",
+    "fastify": "^3.28.0",
     "fastify-cors": "^6.0.3",
     "file-type": "^17.1.1",
     "got": "^12.0.3",
