@@ -8,7 +8,7 @@ specifiers:
   fastify: ^3.28.0
   fastify-cors: ^6.0.3
   file-type: ^17.1.1
-  got: ^12.0.3
+  got: ^12.0.4
   image-size: ^1.0.1
   typescript: ^4.6.3
 
@@ -19,7 +19,7 @@ dependencies:
   fastify: 3.28.0
   fastify-cors: 6.0.3
   file-type: 17.1.1
-  got: 12.0.3
+  got: 12.0.4
   image-size: 1.0.1
 
 devDependencies:
@@ -39,13 +39,13 @@ packages:
     hasBin: true
     dependencies:
       detect-libc: 2.0.1
-      https-proxy-agent: 5.0.0
+      https-proxy-agent: 5.0.1
       make-dir: 3.1.0
       node-fetch: 2.6.7
       nopt: 5.0.0
       npmlog: 5.0.1
       rimraf: 3.0.2
-      semver: 7.3.5
+      semver: 7.3.7
       tar: 6.1.11
     transitivePeerDependencies:
       - encoding
@@ -73,7 +73,7 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 3.1.4
-      '@types/node': 17.0.23
+      '@types/node': 17.0.26
       '@types/responselike': 1.0.0
     dev: false
 
@@ -94,17 +94,17 @@ packages:
   /@types/keyv/3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 17.0.23
+      '@types/node': 17.0.26
     dev: false
 
-  /@types/node/17.0.23:
-    resolution: {integrity: sha512-UxDxWn7dl97rKVeVS61vErvw086aCYhDLyvRQZ5Rk65rZKepaFdm53GeqXaKBuOhED4e9uWq34IC3TdSdJJ2Gw==}
+  /@types/node/17.0.26:
+    resolution: {integrity: sha512-z/FG/6DUO7pnze3AE3TBGIjGGKkvCcGcWINe1C7cADY8hKLJPDYpzsNE37uExQ4md5RFtTCvg+M8Mu1Enyeg2A==}
     dev: false
 
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 17.0.23
+      '@types/node': 17.0.26
     dev: false
 
   /abbrev/1.1.1:
@@ -202,7 +202,7 @@ packages:
       clone-response: 1.0.2
       get-stream: 5.2.0
       http-cache-semantics: 4.1.0
-      keyv: 4.2.1
+      keyv: 4.2.2
       lowercase-keys: 2.0.0
       normalize-url: 6.1.0
       responselike: 2.0.0
@@ -392,7 +392,7 @@ packages:
       proxy-addr: 2.0.7
       rfdc: 1.3.0
       secure-json-parse: 2.4.0
-      semver: 7.3.5
+      semver: 7.3.7
       tiny-lru: 8.0.2
     transitivePeerDependencies:
       - supports-color
@@ -485,8 +485,8 @@ packages:
       path-is-absolute: 1.0.1
     dev: false
 
-  /got/12.0.3:
-    resolution: {integrity: sha512-hmdcXi/S0gcAtDg4P8j/rM7+j3o1Aq6bXhjxkDhRY2ipe7PHpvx/14DgTY2czHOLaGeU8VRvRecidwfu9qdFug==}
+  /got/12.0.4:
+    resolution: {integrity: sha512-2Eyz4iU/ktq7wtMFXxzK7g5p35uNYLLdiZarZ5/Yn3IJlNEpBd5+dCgcAyxN8/8guZLszffwe3wVyw+DEVrpBg==}
     engines: {node: '>=14.16'}
     dependencies:
       '@sindresorhus/is': 4.6.0
@@ -498,7 +498,7 @@ packages:
       decompress-response: 6.0.0
       form-data-encoder: 1.7.1
       get-stream: 6.0.1
-      http2-wrapper: 2.1.10
+      http2-wrapper: 2.1.11
       lowercase-keys: 3.0.0
       p-cancelable: 3.0.0
       responselike: 2.0.0
@@ -512,16 +512,16 @@ packages:
     resolution: {integrity: sha512-carPklcUh7ROWRK7Cv27RPtdhYhUsela/ue5/jKzjegVvXDqM2ILE9Q2BGn9JZJh1g87cp56su/FgQSzcWS8cQ==}
     dev: false
 
-  /http2-wrapper/2.1.10:
-    resolution: {integrity: sha512-QHgsdYkieKp+6JbXP25P+tepqiHYd+FVnDwXpxi/BlUcoIB0nsmTOymTNvETuTO+pDuwcSklPE72VR3DqV+Haw==}
+  /http2-wrapper/2.1.11:
+    resolution: {integrity: sha512-aNAk5JzLturWEUiuhAN73Jcbq96R7rTitAoXV54FYMatvihnpD2+6PUgU4ce3D/m5VDbw+F5CsyKSF176ptitQ==}
     engines: {node: '>=10.19.0'}
     dependencies:
       quick-lru: 5.1.1
       resolve-alpn: 1.2.1
     dev: false
 
-  /https-proxy-agent/5.0.0:
-    resolution: {integrity: sha512-EkYm5BcKUGiduxzSt3Eppko+PiNWNEpa4ySk9vTC6wDsQJW9rHSa+UhGNJoRYp7bz6Ht1eaRIa6QaJqO5rCFbA==}
+  /https-proxy-agent/5.0.1:
+    resolution: {integrity: sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==}
     engines: {node: '>= 6'}
     dependencies:
       agent-base: 6.0.2
@@ -575,8 +575,8 @@ packages:
     resolution: {integrity: sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==}
     dev: false
 
-  /keyv/4.2.1:
-    resolution: {integrity: sha512-cAJq5cTfxQdq1DHZEVNpnk4mEvhP+8UP8UQftLtTtJ98beKkRHf+62M0mIDM2u/IWXyP8bmGB375/6uGdSX2MA==}
+  /keyv/4.2.2:
+    resolution: {integrity: sha512-uYS0vKTlBIjNCAUqrjlxmruxOEiZxZIHXyp32sdcGmP+ukFrmWUnE//RcPXJH3Vxrni1H2gsQbjHE0bH7MtMQQ==}
     dependencies:
       compress-brotli: 1.3.6
       json-buffer: 3.0.1
@@ -860,8 +860,8 @@ packages:
     hasBin: true
     dev: false
 
-  /semver/7.3.5:
-    resolution: {integrity: sha512-PoeGJYh8HK4BTO/a9Tf6ZG3veo/A7ZVsYrSA6J8ny9nb3B1VrpkuN+z9OE5wfE5p6H4LchYZsegiQgbJD94ZFQ==}
+  /semver/7.3.7:
+    resolution: {integrity: sha512-QlYTucUYOews+WeEujDoEGziz4K6c47V/Bd+LjSSYcA94p+DmINdf7ncaUinThfvZyu13lN9OY1XDxt8C0Tw0g==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
