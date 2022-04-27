@@ -3,7 +3,7 @@ import config from "./config.js";
 
 // Modules
 import fastify from "fastify";
-import fastifyCors from "fastify-cors";
+import fastifyCors from "@fastify/cors";
 import { fileTypeFromBuffer } from "file-type";
 
 // Classes
