@@ -6,25 +6,25 @@ specifiers:
   canvas: ^2.9.1
   dotenv-safe: ^8.2.0
   fast-xml-parser: ^4.0.7
-  fastify: ^3.28.0
+  fastify: ^3.29.0
   file-type: ^17.1.1
   got: ^12.0.4
   image-size: ^1.0.1
-  typescript: ^4.6.3
+  typescript: ^4.6.4
 
 dependencies:
   '@fastify/cors': 7.0.0
   canvas: 2.9.1
   dotenv-safe: 8.2.0
   fast-xml-parser: 4.0.7
-  fastify: 3.28.0
+  fastify: 3.29.0
   file-type: 17.1.1
   got: 12.0.4
   image-size: 1.0.1
 
 devDependencies:
   '@types/dotenv-safe': 8.1.2
-  typescript: 4.6.3
+  typescript: 4.6.4
 
 packages:
 
@@ -39,6 +39,10 @@ packages:
     dependencies:
       fastify-plugin: 3.0.1
       vary: 1.1.2
+    dev: false
+
+  /@fastify/error/2.0.0:
+    resolution: {integrity: sha512-wI3fpfDT0t7p8E6dA2eTECzzOd+bZsZCJ2Hcv+Onn2b7ZwK3RwD27uW2QDaMtQhAfWQQP+WNK7nKf0twLsBf9w==}
     dev: false
 
   /@mapbox/node-pre-gyp/1.0.9:
@@ -80,7 +84,7 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 3.1.4
-      '@types/node': 17.0.26
+      '@types/node': 17.0.30
       '@types/responselike': 1.0.0
     dev: false
 
@@ -101,17 +105,17 @@ packages:
   /@types/keyv/3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 17.0.26
+      '@types/node': 17.0.30
     dev: false
 
-  /@types/node/17.0.26:
-    resolution: {integrity: sha512-z/FG/6DUO7pnze3AE3TBGIjGGKkvCcGcWINe1C7cADY8hKLJPDYpzsNE37uExQ4md5RFtTCvg+M8Mu1Enyeg2A==}
+  /@types/node/17.0.30:
+    resolution: {integrity: sha512-oNBIZjIqyHYP8VCNAV9uEytXVeXG2oR0w9lgAXro20eugRQfY002qr3CUl6BAe+Yf/z3CRjPdz27Pu6WWtuSRw==}
     dev: false
 
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 17.0.26
+      '@types/node': 17.0.30
     dev: false
 
   /abbrev/1.1.1:
@@ -368,22 +372,18 @@ packages:
       strnum: 1.0.5
     dev: false
 
-  /fastify-error/0.3.1:
-    resolution: {integrity: sha512-oCfpcsDndgnDVgiI7bwFKAun2dO+4h84vBlkWsWnz/OUK9Reff5UFoFl241xTiLeHWX/vU9zkDVXqYUxjOwHcQ==}
-    dev: false
-
   /fastify-plugin/3.0.1:
     resolution: {integrity: sha512-qKcDXmuZadJqdTm6vlCqioEbyewF60b/0LOFCcYN1B6BIZGlYJumWWOYs70SFYLDAH4YqdE1cxH/RKMG7rFxgA==}
     dev: false
 
-  /fastify/3.28.0:
-    resolution: {integrity: sha512-LAQtGllpkRe8L6Tpf3zdbvXzXFOrgaWV3Tbvp3xMv9ngcr9zht9U2/mo5zq9qp9kplSiBJ0w43aVAMqv6PBMbw==}
+  /fastify/3.29.0:
+    resolution: {integrity: sha512-zXSiDTdHJCHcmDrSje1f1RfzTmUTjMtHnPhh6cdokgfHhloQ+gy0Du+KlEjwTbcNC3Djj4GAsBzl6KvfI9Ah2g==}
     dependencies:
       '@fastify/ajv-compiler': 1.1.0
+      '@fastify/error': 2.0.0
       abstract-logging: 2.0.1
       avvio: 7.2.5
       fast-json-stringify: 2.7.13
-      fastify-error: 0.3.1
       find-my-way: 4.5.1
       flatstr: 1.0.12
       light-my-request: 4.9.0
@@ -966,8 +966,8 @@ packages:
     resolution: {integrity: sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=}
     dev: false
 
-  /typescript/4.6.3:
-    resolution: {integrity: sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==}
+  /typescript/4.6.4:
+    resolution: {integrity: sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
