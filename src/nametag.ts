@@ -93,7 +93,7 @@ export async function createNametag(
     const legitAssets = assets.reduce((filtered, promise) => {
       if (promise.status === "fulfilled") {
         const asset = promise.value;
-        filtered.push(asset);
+        if (asset) filtered.push(asset);
       }
       return filtered;
     }, [] as RobloxAsset[]);

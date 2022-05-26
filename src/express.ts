@@ -77,6 +77,9 @@ router.get<{
     const name: string = req.params.name as any;
     const imageBuffer = await createNametag(name);
     const fileType = await fileTypeFromBuffer(imageBuffer);
+    if (typeof fileType === "undefined") {
+      throw new Error("Unable to infer file type!");
+    }
     res.header("Content-Type", fileType.mime);
     res.header("Cache-Control", "public");
     return imageBuffer;
@@ -107,6 +110,9 @@ router.get<{
     } catch (error) {}
     const imageBuffer = await createNametag(name, index, false, tShirtIDs);
     const fileType = await fileTypeFromBuffer(imageBuffer);
+    if (typeof fileType === "undefined") {
+      throw new Error("Unable to infer file type!");
+    }
     res.header("Content-Type", fileType.mime);
     res.header("Cache-Control", "public");
     return imageBuffer;
@@ -137,6 +143,9 @@ router.get<{
     } catch (error) {}
     const imageBuffer = await createNametag(name, index, true, tShirtIDs);
     const fileType = await fileTypeFromBuffer(imageBuffer);
+    if (typeof fileType === "undefined") {
+      throw new Error("Unable to infer file type!");
+    }
     res.header("Content-Type", fileType.mime);
     res.header("Cache-Control", "public");
     return imageBuffer;

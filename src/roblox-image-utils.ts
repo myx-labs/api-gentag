@@ -7,7 +7,7 @@ import sizeOf from "image-size";
 export interface RobloxAsset {
   webId?: number;
   assetId: number;
-  type: string;
+  type?: string;
   buffer: Buffer;
 }
 
@@ -76,18 +76,20 @@ export async function getAssetFromId(id: number) {
       return asset;
     }
     const size = sizeOf(buffer);
-    const aspectRatio = size.height / size.width;
-    const asset: RobloxAsset = {
-      assetId: id,
-      type: Math.abs(aspectRatio - 585 / 559)
-        ? "Shirt"
-        : Math.abs(aspectRatio - 128 / 128)
-        ? "ShirtGraphic"
-        : null,
-      buffer: buffer,
-    };
-    assetCache.push(asset);
-    return asset;
+    if (size.height && size.width) {
+      const aspectRatio = size.height / size.width;
+      const asset: RobloxAsset = {
+        assetId: id,
+        type: Math.abs(aspectRatio - 585 / 559)
+          ? "Shirt"
+          : Math.abs(aspectRatio - 128 / 128)
+          ? "ShirtGraphic"
+          : undefined,
+        buffer: buffer,
+      };
+      assetCache.push(asset);
+      return asset;
+    }
   }
   return cacheHit;
 }
