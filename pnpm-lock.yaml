@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@fastify/cors': ^7.0.0
   '@types/dotenv-safe': ^8.1.2
-  '@types/node': ^16.11.38
+  '@types/node': ^16.11.39
   canvas: ^2.9.1
   dotenv-safe: ^8.2.0
   fast-xml-parser: ^4.0.8
@@ -25,7 +25,7 @@ dependencies:
 
 devDependencies:
   '@types/dotenv-safe': 8.1.2
-  '@types/node': 16.11.38
+  '@types/node': 16.11.39
   typescript: 4.7.3
 
 packages:
@@ -86,7 +86,7 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 3.1.4
-      '@types/node': 16.11.38
+      '@types/node': 16.11.39
       '@types/responselike': 1.0.0
     dev: false
 
@@ -107,16 +107,16 @@ packages:
   /@types/keyv/3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 16.11.38
+      '@types/node': 16.11.39
     dev: false
 
-  /@types/node/16.11.38:
-    resolution: {integrity: sha512-hjO/0K140An3GWDw2HJfq7gko3wWeznbjXgg+rzPdVzhe198hp4x2i1dgveAOEiFKd8sOilAxzoSJiVv5P/CUg==}
+  /@types/node/16.11.39:
+    resolution: {integrity: sha512-K0MsdV42vPwm9L6UwhIxMAOmcvH/1OoVkZyCgEtVu4Wx7sElGloy/W7kMBNe/oJ7V/jW9BVt1F6RahH6e7tPXw==}
 
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 16.11.38
+      '@types/node': 16.11.39
     dev: false
 
   /abbrev/1.1.1:
@@ -589,7 +589,7 @@ packages:
       ajv: 8.11.0
       cookie: 0.5.0
       process-warning: 1.0.0
-      set-cookie-parser: 2.4.8
+      set-cookie-parser: 2.5.0
     dev: false
 
   /lowercase-keys/2.0.0:
@@ -873,8 +873,8 @@ packages:
     resolution: {integrity: sha1-BF+XgtARrppoA93TgrJDkrPYkPc=}
     dev: false
 
-  /set-cookie-parser/2.4.8:
-    resolution: {integrity: sha512-edRH8mBKEWNVIVMKejNnuJxleqYE/ZSdcT8/Nem9/mmosx12pctd80s2Oy00KNZzrogMZS5mauK2/ymL1bvlvg==}
+  /set-cookie-parser/2.5.0:
+    resolution: {integrity: sha512-cHMAtSXilfyBePduZEBVPTCftTQWz6ehWJD5YNUg4mqvRosrrjKbo4WS8JkB0/RxonMoohHm7cOGH60mDkRQ9w==}
     dev: false
 
   /signal-exit/3.0.7:
