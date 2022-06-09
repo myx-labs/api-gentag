@@ -4,6 +4,8 @@ import { fileTypeFromBuffer } from "file-type";
 import { XMLParser } from "fast-xml-parser";
 import sizeOf from "image-size";
 
+const timeoutDuration = 5 * 1000;
+
 export interface RobloxAsset {
   webId?: number;
   assetId: number;
@@ -34,7 +36,12 @@ async function checkImage(buffer: Buffer) {
 
 async function getImageIdFromAssetId(id: number) {
   const text = await got(
-    `https://assetdelivery.roblox.com/v1/asset/?id=${id}`
+    `https://assetdelivery.roblox.com/v1/asset/?id=${id}`,
+    {
+      timeout: {
+        request: timeoutDuration,
+      },
+    }
   ).text();
   const parser = new XMLParser({
     ignoreAttributes: false,
@@ -49,7 +56,12 @@ async function getImageIdFromAssetId(id: number) {
 
 async function getImageBufferFromImageId(id: number) {
   const imageBuffer = await got(
-    `https://assetdelivery.roblox.com/v1/asset/?id=${id}`
+    `https://assetdelivery.roblox.com/v1/asset/?id=${id}`,
+    {
+      timeout: {
+        request: timeoutDuration,
+      },
+    }
   ).buffer();
   return imageBuffer;
 }
@@ -60,7 +72,12 @@ export async function getAssetFromId(id: number) {
   );
   if (!cacheHit) {
     const buffer = await got(
-      `https://assetdelivery.roblox.com/v1/asset/?id=${id}`
+      `https://assetdelivery.roblox.com/v1/asset/?id=${id}`,
+      {
+        timeout: {
+          request: timeoutDuration,
+        },
+      }
     ).buffer();
     const type = await checkImage(buffer);
     if (type !== "image") {
