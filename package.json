@@ -20,10 +20,10 @@
     "@fastify/cors": "^8.0.0",
     "@fastify/type-provider-typebox": "^1.0.0",
     "@sinclair/typebox": "^0.23.5",
-    "canvas": "^2.9.1",
+    "canvas": "^2.9.3",
     "dotenv-safe": "^8.2.0",
     "fast-xml-parser": "^4.0.8",
-    "fastify": "^4.1.0",
+    "fastify": "^4.2.0",
     "file-type": "^17.1.2",
     "got": "^12.1.0",
     "image-size": "^1.0.1"
