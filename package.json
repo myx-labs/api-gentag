@@ -18,14 +18,14 @@
   },
   "dependencies": {
     "@fastify/cors": "^8.0.0",
-    "@fastify/type-provider-typebox": "^2.0.1",
-    "@sinclair/typebox": "^0.24.9",
+    "@fastify/type-provider-typebox": "^2.1.0",
+    "@sinclair/typebox": "^0.24.18",
     "canvas": "^2.9.3",
     "dotenv-safe": "^8.2.0",
-    "fast-xml-parser": "^4.0.8",
-    "fastify": "^4.2.0",
+    "fast-xml-parser": "^4.0.9",
+    "fastify": "^4.2.1",
     "file-type": "^17.1.2",
     "got": "^12.1.0",
-    "image-size": "^1.0.1"
+    "image-size": "^1.0.2"
   }
 }
