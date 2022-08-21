@@ -5,7 +5,7 @@ specifiers:
   '@fastify/type-provider-typebox': ^2.3.0
   '@sinclair/typebox': ^0.24.28
   '@types/dotenv-safe': ^8.1.2
-  '@types/node': ^16.11.49
+  '@types/node': ^16.11.51
   canvas: ^2.9.3
   dotenv-safe: ^8.2.0
   fast-xml-parser: ^4.0.9
@@ -29,7 +29,7 @@ dependencies:
 
 devDependencies:
   '@types/dotenv-safe': 8.1.2
-  '@types/node': 16.11.49
+  '@types/node': 16.11.51
   typescript: 4.7.4
 
 packages:
@@ -116,7 +116,7 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 3.1.4
-      '@types/node': 16.11.49
+      '@types/node': 16.11.51
       '@types/responselike': 1.0.0
     dev: false
 
@@ -137,16 +137,16 @@ packages:
   /@types/keyv/3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 16.11.49
+      '@types/node': 16.11.51
     dev: false
 
-  /@types/node/16.11.49:
-    resolution: {integrity: sha512-Abq9fBviLV93OiXMu+f6r0elxCzRwc0RC5f99cU892uBITL44pTvgvEqlRlPRi8EGcO1z7Cp8A4d0s/p3J/+Nw==}
+  /@types/node/16.11.51:
+    resolution: {integrity: sha512-h6p1A77pHBDdOcI9y6Wfh9iRGa8lMUZMk2ebHJTNTtRwgbQzgemZow6PW7+Xs7Z0r0IQFY1+iRlcNAkRrf53nA==}
 
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 16.11.49
+      '@types/node': 16.11.51
     dev: false
 
   /abbrev/1.1.1:
