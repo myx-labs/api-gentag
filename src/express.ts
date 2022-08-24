@@ -17,7 +17,7 @@ import {
 
 // Variables
 const router = fastify({
-  trustProxy: "127.0.0.1",
+  trustProxy: true,
 }).withTypeProvider<TypeBoxTypeProvider>();
 const port: number = config.api.port;
 
