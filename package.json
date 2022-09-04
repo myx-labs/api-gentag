@@ -20,7 +20,7 @@
     "@fastify/cors": "^8.1.0",
     "@fastify/type-provider-typebox": "^2.3.0",
     "@sinclair/typebox": "^0.24.34",
-    "canvas": "^2.9.3",
+    "canvas": "^2.10.0",
     "dotenv-safe": "^8.2.0",
     "fast-xml-parser": "^4.0.9",
     "fastify": "^4.5.3",

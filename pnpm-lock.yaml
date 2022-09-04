@@ -6,7 +6,7 @@ specifiers:
   '@sinclair/typebox': ^0.24.34
   '@types/dotenv-safe': ^8.1.2
   '@types/node': ^16.11.56
-  canvas: ^2.9.3
+  canvas: ^2.10.0
   dotenv-safe: ^8.2.0
   fast-xml-parser: ^4.0.9
   fastify: ^4.5.3
@@ -19,7 +19,7 @@ dependencies:
   '@fastify/cors': 8.1.0
   '@fastify/type-provider-typebox': 2.3.0_5tpiazdvzpqbghigsy2fjdevhm
   '@sinclair/typebox': 0.24.34
-  canvas: 2.9.3
+  canvas: 2.10.0
   dotenv-safe: 8.2.0
   fast-xml-parser: 4.0.9
   fastify: 4.5.3
@@ -117,7 +117,7 @@ packages:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 3.1.4
       '@types/node': 16.11.56
-      '@types/responselike': 1.0.0
+      '@types/responselike': 3.0.0
     dev: false
 
   /@types/dotenv-safe/8.1.2:
@@ -139,10 +139,11 @@ packages:
   /@types/node/16.11.56:
     resolution: {integrity: sha512-aFcUkv7EddxxOa/9f74DINReQ/celqH8DiB3fRYgVDM2Xm5QJL8sl80QKuAnGvwAsMn+H3IFA6WCrQh1CY7m1A==}
 
-  /@types/responselike/1.0.0:
-    resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
+  /@types/responselike/3.0.0:
+    resolution: {integrity: sha512-zfgGLWx5IQOTJgQPD4UfGEhapTKUPC1ra/QCG02y3GUJWrhX05bBf/EfTh3aFj2DKi7cLo+cipXLNclD27tQXQ==}
+    deprecated: This is a stub types definition. responselike provides its own type definitions, so you do not need this installed.
     dependencies:
-      '@types/node': 16.11.56
+      responselike: 3.0.0
     dev: false
 
   /abbrev/1.1.1:
@@ -252,8 +253,8 @@ packages:
       responselike: 2.0.1
     dev: false
 
-  /canvas/2.9.3:
-    resolution: {integrity: sha512-WOUM7ghii5TV2rbhaZkh1youv/vW1/Canev6Yx6BG2W+1S07w8jKZqKkPnbiPpQEDsnJdN8ouDd7OvQEGXDcUw==}
+  /canvas/2.10.0:
+    resolution: {integrity: sha512-A0RPxLcH0pPKAY2VN243LdCNcOJXAT8n7nJnN7TZMGv9OuF8we9wfpWgVT/eFMzi+cDYf/384w4BpfjGCD9aKQ==}
     engines: {node: '>=6'}
     requiresBuild: true
     dependencies:
