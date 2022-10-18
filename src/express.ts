@@ -2,7 +2,7 @@
 import config from "./config.js";
 
 // Modules
-import fastify from "fastify";
+import { fastify } from "fastify";
 import fastifyCors from "@fastify/cors";
 import { TypeBoxTypeProvider } from "@fastify/type-provider-typebox";
 import { Type } from "@sinclair/typebox";
@@ -21,7 +21,7 @@ const router = fastify({
 }).withTypeProvider<TypeBoxTypeProvider>();
 const port: number = config.api.port;
 
-router.register(fastifyCors, {
+router.register(fastifyCors.default, {
   origin: [
     /localhost/,
     /127.0.0.1/,

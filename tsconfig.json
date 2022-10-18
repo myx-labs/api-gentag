@@ -7,9 +7,9 @@
     "strict": true,
     "preserveConstEnums": true,
     "outDir": "./dist",
-    "moduleResolution": "node",
-    "skipLibCheck": true,
+    "moduleResolution": "Node16",
     "esModuleInterop": true,
+    "incremental": true,
     "resolveJsonModule": true
   },
   "include": ["src/*.ts", "src/**/*.ts", "src/*.tsx", "src/**/*.tsx"]

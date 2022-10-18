@@ -92,7 +92,7 @@ export async function getAssetFromId(id: number) {
       assetCache.push(asset);
       return asset;
     }
-    const size = sizeOf(buffer);
+    const size = sizeOf.default(buffer);
     if (size.height && size.width) {
       const aspectRatio = size.height / size.width;
       const asset: RobloxAsset = {
