@@ -13,19 +13,19 @@
   "license": "ISC",
   "devDependencies": {
     "@types/dotenv-safe": "^8.1.2",
-    "@types/node": "^16.11.57",
-    "typescript": "^4.8.2"
+    "@types/node": "^16.18.3",
+    "typescript": "^4.8.4"
   },
   "dependencies": {
-    "@fastify/cors": "^8.1.0",
+    "@fastify/cors": "^8.2.0",
     "@fastify/type-provider-typebox": "^2.3.0",
-    "@sinclair/typebox": "^0.24.35",
-    "canvas": "^2.10.0",
+    "@sinclair/typebox": "^0.24.51",
+    "canvas": "^2.10.2",
     "dotenv-safe": "^8.2.0",
-    "fast-xml-parser": "^4.0.9",
-    "fastify": "^4.5.3",
+    "fast-xml-parser": "^4.0.11",
+    "fastify": "^4.9.2",
     "file-type": "^18.0.0",
-    "got": "^12.4.1",
+    "got": "^12.5.2",
     "image-size": "^1.0.2"
   }
 }
