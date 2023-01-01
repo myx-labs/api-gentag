@@ -5,8 +5,8 @@ specifiers:
   '@fastify/type-provider-typebox': ^2.4.0
   '@sinclair/typebox': ^0.25.16
   '@types/dotenv-safe': ^8.1.2
-  '@types/node': ^16.18.10
-  canvas: ^2.10.2
+  '@types/node': ^16.18.11
+  canvas: ^2.11.0
   dotenv-safe: ^8.2.0
   fast-xml-parser: ^4.0.12
   fastify: ^4.10.2
@@ -19,7 +19,7 @@ dependencies:
   '@fastify/cors': 8.2.0
   '@fastify/type-provider-typebox': 2.4.0_6bmuhyog6tsemt4ntrctkk3afu
   '@sinclair/typebox': 0.25.16
-  canvas: 2.10.2
+  canvas: 2.11.0
   dotenv-safe: 8.2.0
   fast-xml-parser: 4.0.12
   fastify: 4.10.2
@@ -29,7 +29,7 @@ dependencies:
 
 devDependencies:
   '@types/dotenv-safe': 8.1.2
-  '@types/node': 16.18.10
+  '@types/node': 16.18.11
   typescript: 4.9.4
 
 packages:
@@ -117,12 +117,8 @@ packages:
       dotenv: 8.6.0
     dev: true
 
-  /@types/http-cache-semantics/4.0.1:
-    resolution: {integrity: sha512-SZs7ekbP8CN0txVG2xVRH6EgKmEm31BOxA07vkFaETzZz1xh+cbt8BcI0slpymvwhx5dlFnQG2rTlPVQn+iRPQ==}
-    dev: false
-
-  /@types/node/16.18.10:
-    resolution: {integrity: sha512-XU1+v7h81p7145ddPfjv7jtWvkSilpcnON3mQ+bDi9Yuf7OI56efOglXRyXWgQ57xH3fEQgh7WOJMncRHVew5w==}
+  /@types/node/16.18.11:
+    resolution: {integrity: sha512-3oJbGBUWuS6ahSnEq1eN2XrCyf4YsWI8OyCvo7c64zQJNplk3mO84t53o8lfTk+2ji59g5ycfc6qQ3fdHliHuA==}
     dev: true
 
   /abbrev/1.1.1:
@@ -230,11 +226,10 @@ packages:
     engines: {node: '>=14.16'}
     dev: false
 
-  /cacheable-request/10.2.3:
-    resolution: {integrity: sha512-6BehRBOs7iurNjAYN9iPazTwFDaMQavJO8W1MEm3s2pH8q/tkPTtLDRUZaweWK87WFGf2Y5wLAlaCJlR5kOz3w==}
+  /cacheable-request/10.2.4:
+    resolution: {integrity: sha512-IWIea8ei1Ht4dBqvlvh7Gs7EYlMyBhlJybLDUB9sadEqHqftmdNieMLIR5ia3vs8gbjj9t8hXLBpUVg3vcQNbg==}
     engines: {node: '>=14.16'}
     dependencies:
-      '@types/http-cache-semantics': 4.0.1
       get-stream: 6.0.1
       http-cache-semantics: 4.1.0
       keyv: 4.5.2
@@ -243,8 +238,8 @@ packages:
       responselike: 3.0.0
     dev: false
 
-  /canvas/2.10.2:
-    resolution: {integrity: sha512-FSmlsip0nZ0U4Zcfht0qBJqDhlfGuevTZKE8h+dBOYrJjGvY3iqMGSzzbvkaFhvMXiVxfcMaPHS/kge++T5SKg==}
+  /canvas/2.11.0:
+    resolution: {integrity: sha512-bdTjFexjKJEwtIo0oRx8eD4G2yWoUOXP9lj279jmQ2zMnTQhT8C3512OKz3s+ZOaQlLbE7TuVvRDYDB3Llyy5g==}
     engines: {node: '>=6'}
     requiresBuild: true
     dependencies:
@@ -498,7 +493,7 @@ packages:
       '@sindresorhus/is': 5.3.0
       '@szmarczak/http-timer': 5.0.1
       cacheable-lookup: 7.0.0
-      cacheable-request: 10.2.3
+      cacheable-request: 10.2.4
       decompress-response: 6.0.0
       form-data-encoder: 2.1.4
       get-stream: 6.0.1
@@ -746,8 +741,8 @@ packages:
       split2: 4.1.0
     dev: false
 
-  /pino-std-serializers/6.0.0:
-    resolution: {integrity: sha512-mMMOwSKrmyl+Y12Ri2xhH1lbzQxwwpuru9VjyJpgFIH4asSj88F2csdMwN6+M5g1Ll4rmsYghHLQJw81tgZ7LQ==}
+  /pino-std-serializers/6.1.0:
+    resolution: {integrity: sha512-KO0m2f1HkrPe9S0ldjx7za9BJjeHqBku5Ch8JyxETxT8dEFGz1PwgrHaOQupVYitpzbFSYm7nnljxD8dik2c+g==}
     dev: false
 
   /pino/8.8.0:
@@ -758,11 +753,11 @@ packages:
       fast-redact: 3.1.2
       on-exit-leak-free: 2.1.0
       pino-abstract-transport: 1.0.0
-      pino-std-serializers: 6.0.0
+      pino-std-serializers: 6.1.0
       process-warning: 2.1.0
       quick-format-unescaped: 4.0.4
       real-require: 0.2.0
-      safe-stable-stringify: 2.4.1
+      safe-stable-stringify: 2.4.2
       sonic-boom: 3.2.1
       thread-stream: 2.2.0
     dev: false
@@ -882,8 +877,8 @@ packages:
       ret: 0.2.2
     dev: false
 
-  /safe-stable-stringify/2.4.1:
-    resolution: {integrity: sha512-dVHE6bMtS/bnL2mwualjc6IxEv1F+OCUpA46pKUj6F8uDbUM0jCCulPqRNPSnWwGNKx5etqMjZYdXtrm5KJZGA==}
+  /safe-stable-stringify/2.4.2:
+    resolution: {integrity: sha512-gMxvPJYhP0O9n2pvcfYfIuYgbledAOJFcqRThtPRmjscaipiwcwPPKLytpVzMkG2HAN87Qmo2d4PtGiri1dSLA==}
     engines: {node: '>=10'}
     dev: false
 
