@@ -19,7 +19,7 @@
   "dependencies": {
     "@fastify/cors": "^8.2.0",
     "@fastify/type-provider-typebox": "^2.4.0",
-    "@sinclair/typebox": "^0.25.23",
+    "@sinclair/typebox": "^0.25.24",
     "canvas": "^2.11.0",
     "dotenv-safe": "^8.2.0",
     "fast-xml-parser": "^4.1.2",
