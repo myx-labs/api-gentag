@@ -7,7 +7,7 @@ This is the source code repository for the GenTag back-end web API.
 
 ## Requirements
 
-- Node.js v16+
+- Node.js v18 LTS+
 - PNPM package manager `(npm i -g pnpm)`
 
 ## Setup
