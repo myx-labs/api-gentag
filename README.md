@@ -2,7 +2,6 @@
 
 ![og_image_v2](https://user-images.githubusercontent.com/9079480/161362800-deb39a89-c579-4c8f-a19a-f274d5246405.png)
 
-
 This is the source code repository for the GenTag back-end web API.
 
 ## Requirements
