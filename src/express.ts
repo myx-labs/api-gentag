@@ -4,8 +4,7 @@ import config from "./config.js";
 // Modules
 import fastify from "fastify";
 import fastifyCors from "@fastify/cors";
-import { TypeBoxTypeProvider } from "@fastify/type-provider-typebox";
-import { Type } from "@sinclair/typebox";
+import { Type, TypeBoxTypeProvider } from "@fastify/type-provider-typebox";
 import { fileTypeFromBuffer } from "file-type";
 
 // Classes
