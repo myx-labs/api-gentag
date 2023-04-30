@@ -13,7 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/dotenv-safe": "^8.1.2",
-    "@types/node": "^18.16.0",
+    "@types/node": "^18.16.3",
     "typescript": "^5.0.4"
   },
   "dependencies": {
@@ -22,8 +22,8 @@
     "canvas": "^2.11.2",
     "dotenv-safe": "^8.2.0",
     "fast-xml-parser": "^4.2.2",
-    "fastify": "^4.15.0",
-    "file-type": "^18.2.1",
+    "fastify": "^4.17.0",
+    "file-type": "^18.3.0",
     "got": "^12.6.0",
     "image-size": "^1.0.2"
   }
