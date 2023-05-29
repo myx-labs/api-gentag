@@ -24,7 +24,7 @@
     "fast-xml-parser": "^4.2.2",
     "fastify": "^4.17.0",
     "file-type": "^18.4.0",
-    "got": "^12.6.1",
+    "got": "^13.0.0",
     "image-size": "^1.0.2"
   }
 }

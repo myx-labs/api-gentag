@@ -2,7 +2,7 @@
 import got from "got";
 import { fileTypeFromBuffer } from "file-type";
 import { XMLParser } from "fast-xml-parser";
-import sizeOf from "image-size";
+import { imageSize as sizeOf } from "image-size";
 
 const timeoutDuration = 5 * 1000;
 
