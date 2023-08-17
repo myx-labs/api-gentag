@@ -9,8 +9,8 @@ dependencies:
     specifier: ^8.3.0
     version: 8.3.0
   '@fastify/type-provider-typebox':
-    specifier: ^3.4.0
-    version: 3.4.0(@sinclair/typebox@0.30.4)
+    specifier: ^3.5.0
+    version: 3.5.0(@sinclair/typebox@0.31.1)
   canvas:
     specifier: ^2.11.2
     version: 2.11.2
@@ -38,8 +38,8 @@ devDependencies:
     specifier: ^8.1.2
     version: 8.1.2
   '@types/node':
-    specifier: ^18.17.3
-    version: 18.17.3
+    specifier: ^18.17.5
+    version: 18.17.5
   tsx:
     specifier: ^3.12.7
     version: 3.12.7
@@ -53,7 +53,7 @@ packages:
     resolution: {integrity: sha512-BDXFbYOJzT/NBEtp71cvsrGPwGAMGRB/349rwKuoxNSiKjPraNNnlK6MIIabViCjqZugu6j+xeMDlEkWdHHJSg==}
     dependencies:
       '@esbuild-kit/core-utils': 3.1.0
-      get-tsconfig: 4.6.2
+      get-tsconfig: 4.7.0
     dev: true
 
   /@esbuild-kit/core-utils@3.1.0:
@@ -67,7 +67,7 @@ packages:
     resolution: {integrity: sha512-Qwfvj/qoPbClxCRNuac1Du01r9gvNOT+pMYtJDapfB1eoGN1YlJ1BixLyL9WVENRx5RXgNLdfYdx/CuswlGhMw==}
     dependencies:
       '@esbuild-kit/core-utils': 3.1.0
-      get-tsconfig: 4.6.2
+      get-tsconfig: 4.7.0
     dev: true
 
   /@esbuild/android-arm64@0.17.19:
@@ -297,12 +297,12 @@ packages:
       fast-json-stringify: 5.8.0
     dev: false
 
-  /@fastify/type-provider-typebox@3.4.0(@sinclair/typebox@0.30.4):
-    resolution: {integrity: sha512-wy1ihi8WtH00sW4YlaA0lZ0nIz/mVVh4stQQ68AtNYTgXI9LPKWylNYDTP2lcXO9az9w902CvqRc8BBwOUTo7w==}
+  /@fastify/type-provider-typebox@3.5.0(@sinclair/typebox@0.31.1):
+    resolution: {integrity: sha512-f48uGzvLflE/y4pvXOS8qjAC+mZmlqev9CPHnB8NDsBSL4EbeydO61IgPuzOkeNlAYeRP9Y56UOKj1XWFibgMw==}
     peerDependencies:
-      '@sinclair/typebox': '>=0.26 <=0.30'
+      '@sinclair/typebox': '>=0.26 <=0.31'
     dependencies:
-      '@sinclair/typebox': 0.30.4
+      '@sinclair/typebox': 0.31.1
     dev: false
 
   /@mapbox/node-pre-gyp@1.0.11:
@@ -323,8 +323,8 @@ packages:
       - supports-color
     dev: false
 
-  /@sinclair/typebox@0.30.4:
-    resolution: {integrity: sha512-wFuuDR+O1OAE2GL0q68h1Ty00RE6Ihcixr55A6TU5RCvOUHnwJw9LGuDVg9NxDiAp7m/YJpa+UaOuLAz0ziyOQ==}
+  /@sinclair/typebox@0.31.1:
+    resolution: {integrity: sha512-oAGsVU6u4k7pNGfDZG1ujFuku25yV3lFmyxZXXLylm0Pf2Qh9pgGFpGwPbyyFZl9PYH4thS9qRcfs3C2Sn3/SA==}
     dev: false
 
   /@sindresorhus/is@5.6.0:
@@ -353,8 +353,8 @@ packages:
     resolution: {integrity: sha512-SZs7ekbP8CN0txVG2xVRH6EgKmEm31BOxA07vkFaETzZz1xh+cbt8BcI0slpymvwhx5dlFnQG2rTlPVQn+iRPQ==}
     dev: false
 
-  /@types/node@18.17.3:
-    resolution: {integrity: sha512-2x8HWtFk0S99zqVQABU9wTpr8wPoaDHZUcAkoTKH+nL7kPv3WUI9cRi/Kk5Mz4xdqXSqTkKP7IWNoQQYCnDsTA==}
+  /@types/node@18.17.5:
+    resolution: {integrity: sha512-xNbS75FxH6P4UXTPUJp/zNPq6/xsfdJKussCWNOnz4aULWIRwMgP1LgaB5RiBnMX1DPCYenuqGZfnIAx5mbFLA==}
     dev: true
 
   /abbrev@1.1.1:
@@ -756,8 +756,8 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /get-tsconfig@4.6.2:
-    resolution: {integrity: sha512-E5XrT4CbbXcXWy+1jChlZmrmCwd5KGx502kDCXJJ7y898TtWW9FwoG5HfOLVRKmlmDGkWN2HM9Ho+/Y8F0sJDg==}
+  /get-tsconfig@4.7.0:
+    resolution: {integrity: sha512-pmjiZ7xtB8URYm74PlGJozDNyhvsVLUcpBa8DZBG3bWHwaHa9bPiRpiSfovw+fjhwONSCWKRyk+JQHEGZmMrzw==}
     dependencies:
       resolve-pkg-maps: 1.0.0
     dev: true
@@ -1044,7 +1044,7 @@ packages:
       real-require: 0.2.0
       safe-stable-stringify: 2.4.3
       sonic-boom: 3.3.0
-      thread-stream: 2.3.0
+      thread-stream: 2.4.0
     dev: false
 
   /process-warning@2.2.0:
@@ -1282,8 +1282,8 @@ packages:
       yallist: 4.0.0
     dev: false
 
-  /thread-stream@2.3.0:
-    resolution: {integrity: sha512-kaDqm1DET9pp3NXwR8382WHbnpXnRkN9xGN9dQt3B2+dmXiW8X1SOwmFOxAErEQ47ObhZ96J6yhZNXuyCOL7KA==}
+  /thread-stream@2.4.0:
+    resolution: {integrity: sha512-xZYtOtmnA63zj04Q+F9bdEay5r47bvpo1CaNqsKi7TpoJHcotUez8Fkfo2RJWpW91lnnaApdpRbVwCWsy+ifcw==}
     dependencies:
       real-require: 0.2.0
     dev: false
