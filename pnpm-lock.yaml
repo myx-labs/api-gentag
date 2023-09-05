@@ -10,7 +10,7 @@ dependencies:
     version: 8.3.0
   '@fastify/type-provider-typebox':
     specifier: ^3.5.0
-    version: 3.5.0(@sinclair/typebox@0.31.5)
+    version: 3.5.0(@sinclair/typebox@0.31.10)
   canvas:
     specifier: ^2.11.2
     version: 2.11.2
@@ -21,8 +21,8 @@ dependencies:
     specifier: ^4.2.7
     version: 4.2.7
   fastify:
-    specifier: ^4.22.0
-    version: 4.22.0
+    specifier: ^4.22.2
+    version: 4.22.2
   file-type:
     specifier: ^18.5.0
     version: 18.5.0
@@ -38,11 +38,11 @@ devDependencies:
     specifier: ^8.1.2
     version: 8.1.2
   '@types/node':
-    specifier: ^18.17.12
-    version: 18.17.12
+    specifier: ^18.17.14
+    version: 18.17.14
   tsx:
-    specifier: ^3.12.7
-    version: 3.12.7
+    specifier: ^3.12.8
+    version: 3.12.8
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
@@ -297,12 +297,12 @@ packages:
       fast-json-stringify: 5.8.0
     dev: false
 
-  /@fastify/type-provider-typebox@3.5.0(@sinclair/typebox@0.31.5):
+  /@fastify/type-provider-typebox@3.5.0(@sinclair/typebox@0.31.10):
     resolution: {integrity: sha512-f48uGzvLflE/y4pvXOS8qjAC+mZmlqev9CPHnB8NDsBSL4EbeydO61IgPuzOkeNlAYeRP9Y56UOKj1XWFibgMw==}
     peerDependencies:
       '@sinclair/typebox': '>=0.26 <=0.31'
     dependencies:
-      '@sinclair/typebox': 0.31.5
+      '@sinclair/typebox': 0.31.10
     dev: false
 
   /@mapbox/node-pre-gyp@1.0.11:
@@ -317,14 +317,14 @@ packages:
       npmlog: 5.0.1
       rimraf: 3.0.2
       semver: 7.5.4
-      tar: 6.1.15
+      tar: 6.2.0
     transitivePeerDependencies:
       - encoding
       - supports-color
     dev: false
 
-  /@sinclair/typebox@0.31.5:
-    resolution: {integrity: sha512-4fbqH1ONle98ULTQakJFVNwGwSx+rv90HEnjZGt1GoApMKooUw1WXw3ub+Ew7rInmyDcwsjIxiHt39bkWzeCBA==}
+  /@sinclair/typebox@0.31.10:
+    resolution: {integrity: sha512-d4xyuqhmWHQk3glt5hS2GXJ2IM9ZkUbMWJeKLpHbpQ1G80CGXZfem2smpbXlazQmbGSWNekjSrMVgCstiz1xoQ==}
     dev: false
 
   /@sindresorhus/is@5.6.0:
@@ -353,8 +353,8 @@ packages:
     resolution: {integrity: sha512-SZs7ekbP8CN0txVG2xVRH6EgKmEm31BOxA07vkFaETzZz1xh+cbt8BcI0slpymvwhx5dlFnQG2rTlPVQn+iRPQ==}
     dev: false
 
-  /@types/node@18.17.12:
-    resolution: {integrity: sha512-d6xjC9fJ/nSnfDeU0AMDsaJyb1iHsqCSOdi84w4u+SlN/UgQdY5tRhpMzaFYsI4mnpvgTivEaQd0yOUhAtOnEQ==}
+  /@types/node@18.17.14:
+    resolution: {integrity: sha512-ZE/5aB73CyGqgQULkLG87N9GnyGe5TcQjv34pwS8tfBs1IkCh0ASM69mydb2znqd6v0eX+9Ytvk6oQRqu8T1Vw==}
     dev: true
 
   /abbrev@1.1.1:
@@ -660,8 +660,8 @@ packages:
     resolution: {integrity: sha512-stRHYGeuqpEZTL1Ef0Ovr2ltazUT9g844X5z/zEBFLG8RYlpDiOCIG+ATvYEp+/zmc7sN29mcIMp8gvYplYPIQ==}
     dev: false
 
-  /fastify@4.22.0:
-    resolution: {integrity: sha512-HLoBmetdQ6zaJohKW6jzUww8NnwHzkbIbUEyAzM+Nnf7cZVSXRuUV+6b2/xLmu6GGkruIFJ/bIQoKWYRx4wnAQ==}
+  /fastify@4.22.2:
+    resolution: {integrity: sha512-rK8mF/1mZJHH6H/L22OhmilTgrp5XMkk3RHcSy03LC+TJ6+wLhbq+4U62bjns15VzIbBNgxTqAForBqtGAa0NQ==}
     dependencies:
       '@fastify/ajv-compiler': 3.5.0
       '@fastify/error': 3.3.0
@@ -1270,8 +1270,8 @@ packages:
       peek-readable: 5.0.0
     dev: false
 
-  /tar@6.1.15:
-    resolution: {integrity: sha512-/zKt9UyngnxIT/EAGYuxaMYgOIJiP81ab9ZfkILq4oNLPFX50qyYmu7jRj9qeXoxmJHjGlbH0+cm2uy1WCs10A==}
+  /tar@6.2.0:
+    resolution: {integrity: sha512-/Wo7DcT0u5HUV486xg675HtjNd3BXZ6xDbzsCUZPt5iw8bTQ63bP0Raut3mvro9u+CUyq7YQd8Cx55fsZXxqLQ==}
     engines: {node: '>=10'}
     dependencies:
       chownr: 2.0.0
@@ -1305,8 +1305,8 @@ packages:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
     dev: false
 
-  /tsx@3.12.7:
-    resolution: {integrity: sha512-C2Ip+jPmqKd1GWVQDvz/Eyc6QJbGfE7NrR3fx5BpEHMZsEHoIxHL1j+lKdGobr8ovEyqeNkPLSKp6SCSOt7gmw==}
+  /tsx@3.12.8:
+    resolution: {integrity: sha512-Lt9KYaRGF023tlLInPj8rgHwsZU8qWLBj4iRXNWxTfjIkU7canGL806AqKear1j722plHuiYNcL2ZCo6uS9UJA==}
     hasBin: true
     dependencies:
       '@esbuild-kit/cjs-loader': 2.4.2
