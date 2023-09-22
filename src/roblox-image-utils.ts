@@ -46,7 +46,7 @@ async function getImageIdFromAssetId(id: number) {
   const parser = new XMLParser({
     ignoreAttributes: false,
   });
-  const json = parser.parse(text);
+  const json = parser.parse<any>(text);
   const item = json.roblox.Item;
   const type = item["@_class"]; // 'Shirt' or 'ShirtGraphic'
   const props = item.Properties;
