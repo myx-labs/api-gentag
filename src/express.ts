@@ -20,14 +20,16 @@ const router = fastify({
 }).withTypeProvider<TypeBoxTypeProvider>();
 const port: number = config.api.port;
 
+const origins = [
+  /localhost/,
+  /127.0.0.1/,
+  /yan3321\.com$/,
+  /yan\.gg$/,
+  /mysver\.se$/,
+];
+
 router.register(fastifyCors, {
-  origin: [
-    /localhost/,
-    /127.0.0.1/,
-    /yan3321.com/,
-    /yan.gg/,
-    /gentag.pages.dev/,
-  ],
+  origin: origins,
 });
 
 router.get("/example", async (req, res) => {
