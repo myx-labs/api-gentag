@@ -10,7 +10,7 @@ dependencies:
     version: 8.4.1
   '@fastify/type-provider-typebox':
     specifier: ^3.5.0
-    version: 3.5.0(@sinclair/typebox@0.31.22)
+    version: 3.5.0(@sinclair/typebox@0.31.23)
   canvas:
     specifier: ^2.11.2
     version: 2.11.2
@@ -35,11 +35,11 @@ dependencies:
 
 devDependencies:
   '@types/dotenv-safe':
-    specifier: ^8.1.4
-    version: 8.1.4
+    specifier: ^8.1.5
+    version: 8.1.5
   '@types/node':
-    specifier: ^20.8.10
-    version: 20.8.10
+    specifier: ^20.9.0
+    version: 20.9.0
   tsx:
     specifier: ^3.14.0
     version: 3.14.0
@@ -276,12 +276,12 @@ packages:
       fast-json-stringify: 5.9.1
     dev: false
 
-  /@fastify/type-provider-typebox@3.5.0(@sinclair/typebox@0.31.22):
+  /@fastify/type-provider-typebox@3.5.0(@sinclair/typebox@0.31.23):
     resolution: {integrity: sha512-f48uGzvLflE/y4pvXOS8qjAC+mZmlqev9CPHnB8NDsBSL4EbeydO61IgPuzOkeNlAYeRP9Y56UOKj1XWFibgMw==}
     peerDependencies:
       '@sinclair/typebox': '>=0.26 <=0.31'
     dependencies:
-      '@sinclair/typebox': 0.31.22
+      '@sinclair/typebox': 0.31.23
     dev: false
 
   /@mapbox/node-pre-gyp@1.0.11:
@@ -302,8 +302,8 @@ packages:
       - supports-color
     dev: false
 
-  /@sinclair/typebox@0.31.22:
-    resolution: {integrity: sha512-CKviMgpcXd8q8IsQQD8cCleswe4/EkQRcOqtVQcP1e+XUyszjJYjgL5Dtf3XunWZc2zEGmQPqJEsq08NiW9xfw==}
+  /@sinclair/typebox@0.31.23:
+    resolution: {integrity: sha512-ZzrzE8yCrWWU4mcBstBgdlBMjB8My3ESY9nZ/v996GptIJb4+MU1p7s1Qxrc2xvZeOiDDnAheLLmdHjPgZV79g==}
     dev: false
 
   /@sindresorhus/is@5.6.0:
@@ -322,19 +322,19 @@ packages:
     resolution: {integrity: sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==}
     dev: false
 
-  /@types/dotenv-safe@8.1.4:
-    resolution: {integrity: sha512-00ANXgqYj5uekMXPffxoTlgXBpDRF4KPX3XPh45G6UNc5M+SM5DuvrZ81qhK1N56Q93zXbyEVGxGLUQUj+aaMQ==}
+  /@types/dotenv-safe@8.1.5:
+    resolution: {integrity: sha512-E8z+Z0+yE8eEZ8BcMnb3I31fV3ROxobooqEDRBoQDAs4lb0c9X6Va6P6z+svj/USxw4R7TErcfEuW0tk7ymaPA==}
     dependencies:
-      '@types/node': 20.8.10
+      '@types/node': 20.9.0
       dotenv: 8.6.0
     dev: true
 
-  /@types/http-cache-semantics@4.0.3:
-    resolution: {integrity: sha512-V46MYLFp08Wf2mmaBhvgjStM3tPa+2GAdy/iqoX+noX1//zje2x4XmrIU0cAwyClATsTmahbtoQ2EwP7I5WSiA==}
+  /@types/http-cache-semantics@4.0.4:
+    resolution: {integrity: sha512-1m0bIFVc7eJWyve9S0RnuRgcQqF/Xd5QsUZAZeQFr1Q3/p9JWoQQEqmVy+DPTNpGXwhgIetAoYF8JSc33q29QA==}
     dev: false
 
-  /@types/node@20.8.10:
-    resolution: {integrity: sha512-TlgT8JntpcbmKUFzjhsyhGfP2fsiz1Mv56im6enJ905xG1DAYesxJaeSbGqQmAw8OWPdhyJGhGSQGKRNJ45u9w==}
+  /@types/node@20.9.0:
+    resolution: {integrity: sha512-nekiGu2NDb1BcVofVcEKMIwzlx4NjHlcjhoxxKBNLtz15Y1z7MYf549DFvkHSId02Ax6kGwWntIBPC3l/JZcmw==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -454,7 +454,7 @@ packages:
     resolution: {integrity: sha512-zkDT5WAF4hSSoUgyfg5tFIxz8XQK+25W/TLVojJTMKBaxevLBBtLxgqguAuVQB8PVW79FVjHcU+GJ9tVbDZ9mQ==}
     engines: {node: '>=14.16'}
     dependencies:
-      '@types/http-cache-semantics': 4.0.3
+      '@types/http-cache-semantics': 4.0.4
       get-stream: 6.0.1
       http-cache-semantics: 4.1.1
       keyv: 4.5.4
