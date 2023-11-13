@@ -24,8 +24,8 @@ dependencies:
     specifier: ^4.24.3
     version: 4.24.3
   file-type:
-    specifier: ^18.6.0
-    version: 18.6.0
+    specifier: ^18.7.0
+    version: 18.7.0
   got:
     specifier: ^13.0.0
     version: 13.0.0
@@ -41,8 +41,8 @@ devDependencies:
     specifier: ^20.9.0
     version: 20.9.0
   tsx:
-    specifier: ^3.14.0
-    version: 3.14.0
+    specifier: ^4.1.1
+    version: 4.1.1
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
@@ -672,8 +672,8 @@ packages:
       reusify: 1.0.4
     dev: false
 
-  /file-type@18.6.0:
-    resolution: {integrity: sha512-uLqXnIAIyy8K9rnvdU9IYi3WIL+6qVBWn24kThYOPlnyU+6yrr2oarn+j7seMLh1wOEG4hEjRP6a30IiKR9OaA==}
+  /file-type@18.7.0:
+    resolution: {integrity: sha512-ihHtXRzXEziMrQ56VSgU7wkxh55iNchFkosu7Y9/S+tXHdKyrGjVK0ujbqNnsxzea+78MaLhN6PGmfYSAv1ACw==}
     engines: {node: '>=14.16'}
     dependencies:
       readable-web-to-node-stream: 3.0.2
@@ -1295,8 +1295,9 @@ packages:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
     dev: false
 
-  /tsx@3.14.0:
-    resolution: {integrity: sha512-xHtFaKtHxM9LOklMmJdI3BEnQq/D5F73Of2E1GDrITi9sgoVkvIsrQUTY1G8FlmGtA+awCI4EBlTRRYxkL2sRg==}
+  /tsx@4.1.1:
+    resolution: {integrity: sha512-zyPn5BFMB0TB5kMLbYPNx4x/oL/oSlaecdKCv6WeJ0TeSEfx8RTJWjuB5TZ2dSewktgfBsBO/HNA9mrMWqLXMA==}
+    engines: {node: '>=18.0.0'}
     hasBin: true
     dependencies:
       esbuild: 0.18.20
