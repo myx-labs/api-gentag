@@ -20,13 +20,13 @@
   },
   "dependencies": {
     "@fastify/cors": "^8.5.0",
-    "@fastify/type-provider-typebox": "^3.5.0",
+    "@fastify/type-provider-typebox": "^3.6.0",
     "canvas": "^2.11.2",
     "dotenv-safe": "^8.2.0",
     "fast-xml-parser": "^4.3.2",
     "fastify": "^4.25.2",
     "file-type": "^18.7.0",
     "got": "^14.0.0",
-    "image-size": "^1.0.2"
+    "image-size": "^1.1.0"
   }
 }
