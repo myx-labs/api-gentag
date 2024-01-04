@@ -9,8 +9,8 @@ dependencies:
     specifier: ^8.5.0
     version: 8.5.0
   '@fastify/type-provider-typebox':
-    specifier: ^3.6.0
-    version: 3.6.0(@sinclair/typebox@0.32.4)
+    specifier: ^4.0.0
+    version: 4.0.0(@sinclair/typebox@0.32.4)
   canvas:
     specifier: ^2.11.2
     version: 2.11.2
@@ -30,16 +30,16 @@ dependencies:
     specifier: ^14.0.0
     version: 14.0.0
   image-size:
-    specifier: ^1.1.0
-    version: 1.1.0
+    specifier: ^1.1.1
+    version: 1.1.1
 
 devDependencies:
   '@types/dotenv-safe':
     specifier: ^8.1.5
     version: 8.1.5
   '@types/node':
-    specifier: ^20.10.5
-    version: 20.10.5
+    specifier: ^20.10.6
+    version: 20.10.6
   tsx:
     specifier: ^4.7.0
     version: 4.7.0
@@ -285,8 +285,8 @@ packages:
       fast-json-stringify: 5.9.2
     dev: false
 
-  /@fastify/type-provider-typebox@3.6.0(@sinclair/typebox@0.32.4):
-    resolution: {integrity: sha512-HTeOLvirfGg0u1KGao3iXn5rZpYNqlrOmyDnXSXAbWVPa+mDQTTBNs/x5uZzOB6vFAqr0Xcf7x1lxOamNSYKjw==}
+  /@fastify/type-provider-typebox@4.0.0(@sinclair/typebox@0.32.4):
+    resolution: {integrity: sha512-kTlN0saC/+xhcQPyBjb3YONQAMjiD/EHlCRjQjsr5E3NFjS5K8ZX5LGzXYDRjSa+sV4y8gTL5Q7FlObePv4iTA==}
     peerDependencies:
       '@sinclair/typebox': '>=0.26 <=0.32'
     dependencies:
@@ -334,7 +334,7 @@ packages:
   /@types/dotenv-safe@8.1.5:
     resolution: {integrity: sha512-E8z+Z0+yE8eEZ8BcMnb3I31fV3ROxobooqEDRBoQDAs4lb0c9X6Va6P6z+svj/USxw4R7TErcfEuW0tk7ymaPA==}
     dependencies:
-      '@types/node': 20.10.5
+      '@types/node': 20.10.6
       dotenv: 8.6.0
     dev: true
 
@@ -342,8 +342,8 @@ packages:
     resolution: {integrity: sha512-1m0bIFVc7eJWyve9S0RnuRgcQqF/Xd5QsUZAZeQFr1Q3/p9JWoQQEqmVy+DPTNpGXwhgIetAoYF8JSc33q29QA==}
     dev: false
 
-  /@types/node@20.10.5:
-    resolution: {integrity: sha512-nNPsNE65wjMxEKI93yOP+NPGGBJz/PoN3kZsVLee0XMiJolxSekEVD8wRwBUBqkwc7UWop0edW50yrCQW4CyRw==}
+  /@types/node@20.10.6:
+    resolution: {integrity: sha512-Vac8H+NlRNNlAmDfGUP7b5h/KA+AtWIzuXy0E6OyP8f1tCLYAtPvKRRDJjAPqhpCb0t6U2j7/xqAuLEebW2kiw==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -814,9 +814,9 @@ packages:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
     dev: false
 
-  /image-size@1.1.0:
-    resolution: {integrity: sha512-asnTHw2K8OlqT5kVnQwX+AGKQqpvLo95LbNzQ/C0ln3yzentZmAdd0ygoD004VC4Kkd4PV7J2iaPQkqwp9yuTw==}
-    engines: {node: '>=18.0.0'}
+  /image-size@1.1.1:
+    resolution: {integrity: sha512-541xKlUw6jr/6gGuk92F+mYM5zaFAc5ahphvkqvNe2bQ6gVBkd6bfrmVJ2t4KDAfikAYZyIqTnktX3i6/aQDrQ==}
+    engines: {node: '>=16.x'}
     hasBin: true
     dependencies:
       queue: 6.0.2
