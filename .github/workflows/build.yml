@@ -1,8 +1,12 @@
-name: Build Gentag Fastify API
+name: Build GenTag Fastify API
 
 on:
-  - push
-  - pull_request
+  push:
+    branches:
+      - "**"
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
