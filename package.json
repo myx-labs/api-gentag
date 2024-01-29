@@ -19,7 +19,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@fastify/cors": "^8.5.0",
+    "@fastify/cors": "^9.0.0",
     "@fastify/type-provider-typebox": "^4.0.0",
     "canvas": "^2.11.2",
     "dotenv-safe": "^8.2.0",
