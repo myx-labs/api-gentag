@@ -24,7 +24,7 @@
     "canvas": "^2.11.2",
     "dotenv-safe": "^8.2.0",
     "fast-xml-parser": "^4.3.3",
-    "fastify": "^4.25.2",
+    "fastify": "^4.26.0",
     "file-type": "^19.0.0",
     "got": "^14.0.0",
     "image-size": "^1.1.1"
