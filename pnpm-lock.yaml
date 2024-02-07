@@ -15,8 +15,8 @@ dependencies:
     specifier: ^2.11.2
     version: 2.11.2
   dotenv-safe:
-    specifier: ^8.2.0
-    version: 8.2.0
+    specifier: ^9.0.0
+    version: 9.0.0(dotenv@8.6.0)
   fast-xml-parser:
     specifier: ^4.3.4
     version: 4.3.4
@@ -544,8 +544,10 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /dotenv-safe@8.2.0:
-    resolution: {integrity: sha512-uWwWWdUQkSs5a3mySDB22UtNwyEYi0JtEQu+vDzIqr9OjbDdC2Ip13PnSpi/fctqlYmzkxCeabiyCAOROuAIaA==}
+  /dotenv-safe@9.0.0(dotenv@8.6.0):
+    resolution: {integrity: sha512-/M8292ReX1jMGLVf/jsAVQzQ0a453C3CJVVyqfoelV+78u9DeluqJU5HbwyQsUCzA4AV5sm52xClVgZWetX+fQ==}
+    peerDependencies:
+      dotenv: '>= 8.2.0'
     dependencies:
       dotenv: 8.6.0
     dev: false
