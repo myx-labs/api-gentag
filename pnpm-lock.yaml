@@ -38,8 +38,8 @@ devDependencies:
     specifier: ^8.1.5
     version: 8.1.5
   '@types/node':
-    specifier: ^20.12.10
-    version: 20.12.10
+    specifier: ^20.12.11
+    version: 20.12.11
   tsx:
     specifier: ^4.10.2
     version: 4.10.2
@@ -334,7 +334,7 @@ packages:
   /@types/dotenv-safe@8.1.5:
     resolution: {integrity: sha512-E8z+Z0+yE8eEZ8BcMnb3I31fV3ROxobooqEDRBoQDAs4lb0c9X6Va6P6z+svj/USxw4R7TErcfEuW0tk7ymaPA==}
     dependencies:
-      '@types/node': 20.12.10
+      '@types/node': 20.12.11
       dotenv: 8.6.0
     dev: true
 
@@ -342,8 +342,8 @@ packages:
     resolution: {integrity: sha512-1m0bIFVc7eJWyve9S0RnuRgcQqF/Xd5QsUZAZeQFr1Q3/p9JWoQQEqmVy+DPTNpGXwhgIetAoYF8JSc33q29QA==}
     dev: false
 
-  /@types/node@20.12.10:
-    resolution: {integrity: sha512-Eem5pH9pmWBHoGAT8Dr5fdc5rYA+4NAovdM4EktRPVAAiJhmWWfQrA0cFhAbOsQdSfIHjAud6YdkbL69+zSKjw==}
+  /@types/node@20.12.11:
+    resolution: {integrity: sha512-vDg9PZ/zi+Nqp6boSOT7plNuthRugEKixDv5sFTIpkE89MmNtEArAShI4mxuX2+UrLEe9pxC1vm2cjm9YlWbJw==}
     dependencies:
       undici-types: 5.26.5
     dev: true
