@@ -18,8 +18,8 @@ dependencies:
     specifier: ^9.1.0
     version: 9.1.0(dotenv@8.6.0)
   fast-xml-parser:
-    specifier: ^4.3.6
-    version: 4.3.6
+    specifier: ^4.4.0
+    version: 4.4.0
   fastify:
     specifier: ^4.27.0
     version: 4.27.0
@@ -641,8 +641,8 @@ packages:
     resolution: {integrity: sha512-eel5UKGn369gGEWOqBShmFJWfq/xSJvsgDzgLYC845GneayWvXBf0lJCBn5qTABfewy1ZDPoaR5OZCP+kssfuw==}
     dev: false
 
-  /fast-xml-parser@4.3.6:
-    resolution: {integrity: sha512-M2SovcRxD4+vC493Uc2GZVcZaj66CCJhWurC4viynVSTvrpErCShNcDz1lAho6n9REQKvL/ll4A4/fw6Y9z8nw==}
+  /fast-xml-parser@4.4.0:
+    resolution: {integrity: sha512-kLY3jFlwIYwBNDojclKsNAC12sfD6NwW74QB2CoNGPvtVxjliYehVunB3HYyNi+n4Tt1dAcgwYvmKF/Z18flqg==}
     hasBin: true
     dependencies:
       strnum: 1.0.5
