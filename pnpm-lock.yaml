@@ -27,8 +27,8 @@ importers:
         specifier: ^4.28.1
         version: 4.28.1
       file-type:
-        specifier: ^19.2.0
-        version: 19.2.0
+        specifier: ^19.3.0
+        version: 19.3.0
       got:
         specifier: ^14.4.1
         version: 14.4.1
@@ -416,8 +416,8 @@ packages:
   fastq@1.17.1:
     resolution: {integrity: sha512-sRVD3lWVIXWg6By68ZN7vho9a1pQcN/WBFaAAsDDFzlJjvoGx0P8z7V1t72grFJfJhu3YPZBuu25f7Kaw2jN1w==}
 
-  file-type@19.2.0:
-    resolution: {integrity: sha512-tUgGaVcM7enfk+toLsBbbCP71iIThjBiMWLk1gYUprcY21/uRNnui0Py9oJ5AIXE7EJYfBeJRAl8pNHBmujboQ==}
+  file-type@19.3.0:
+    resolution: {integrity: sha512-mROwiKLZf/Kwa/2Rol+OOZQn1eyTkPB3ZTwC0ExY6OLFCbgxHYZvBm7xI77NvfZFMKBsmuXfmLJnD4eEftEhrA==}
     engines: {node: '>=18'}
 
   find-my-way@8.1.0:
@@ -1162,7 +1162,7 @@ snapshots:
     dependencies:
       reusify: 1.0.4
 
-  file-type@19.2.0:
+  file-type@19.3.0:
     dependencies:
       strtok3: 8.0.0
       token-types: 6.0.0
