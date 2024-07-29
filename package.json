@@ -23,7 +23,7 @@
     "@fastify/type-provider-typebox": "^4.0.0",
     "canvas": "^2.11.2",
     "dotenv-safe": "^9.1.0",
-    "fast-xml-parser": "^4.4.0",
+    "fast-xml-parser": "^4.4.1",
     "fastify": "^4.28.1",
     "file-type": "^19.3.0",
     "got": "^14.4.1",
