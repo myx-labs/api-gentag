@@ -40,8 +40,8 @@ importers:
         specifier: ^8.1.5
         version: 8.1.5
       '@types/node':
-        specifier: ^22.7.0
-        version: 22.7.0
+        specifier: ^22.7.2
+        version: 22.7.2
       tsx:
         specifier: ^4.19.1
         version: 4.19.1
@@ -242,8 +242,8 @@ packages:
   '@types/http-cache-semantics@4.0.4':
     resolution: {integrity: sha512-1m0bIFVc7eJWyve9S0RnuRgcQqF/Xd5QsUZAZeQFr1Q3/p9JWoQQEqmVy+DPTNpGXwhgIetAoYF8JSc33q29QA==}
 
-  '@types/node@22.7.0':
-    resolution: {integrity: sha512-MOdOibwBs6KW1vfqz2uKMlxq5xAfAZ98SZjO8e3XnAbFnTJtAspqhWk7hrdSAs9/Y14ZWMiy7/MxMUzAOadYEw==}
+  '@types/node@22.7.2':
+    resolution: {integrity: sha512-866lXSrpGpgyHBZUa2m9YNWqHDjjM0aBTJlNtYaGEw4rqY/dcD7deRVTbBBAJelfA7oaGDbNftXF/TL/A6RgoA==}
 
   abbrev@1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
@@ -959,12 +959,12 @@ snapshots:
 
   '@types/dotenv-safe@8.1.5':
     dependencies:
-      '@types/node': 22.7.0
+      '@types/node': 22.7.2
       dotenv: 8.6.0
 
   '@types/http-cache-semantics@4.0.4': {}
 
-  '@types/node@22.7.0':
+  '@types/node@22.7.2':
     dependencies:
       undici-types: 6.19.6
 
