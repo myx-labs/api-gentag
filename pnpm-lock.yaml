@@ -15,8 +15,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0(@sinclair/typebox@0.32.9)
       canvas:
-        specifier: 3.0.0-rc2
-        version: 3.0.0-rc2
+        specifier: 3.0.0-rc3
+        version: 3.0.0-rc3
       dotenv-safe:
         specifier: ^9.1.0
         version: 9.1.0(dotenv@8.6.0)
@@ -279,8 +279,8 @@ packages:
     resolution: {integrity: sha512-Yo9wGIQUaAfIbk+qY0X4cDQgCosecfBe3V9NSyeY4qPC2SAkbCS4Xj79VP8WOzitpJUZKc/wsRCYF5ariDIwkg==}
     engines: {node: '>=18'}
 
-  canvas@3.0.0-rc2:
-    resolution: {integrity: sha512-esx4bYDznnqgRX4G8kaEaf0W3q8xIc51WpmrIitDzmcoEgwnv9wSKdzT6UxWZ4wkVu5+ileofppX0TpyviJRdQ==}
+  canvas@3.0.0-rc3:
+    resolution: {integrity: sha512-LJVkMp4AH7/IRoLvhLS6R09uBt9O3O0mhCYL34AQV/+OC39jmTv22pJTF5Mgfa3V2JnzGl21MVrhEKmtmPtfQA==}
     engines: {node: ^18.12.0 || >= 20.9.0}
 
   chownr@1.1.4:
@@ -843,7 +843,7 @@ snapshots:
       normalize-url: 8.0.1
       responselike: 3.0.0
 
-  canvas@3.0.0-rc2:
+  canvas@3.0.0-rc3:
     dependencies:
       node-addon-api: 7.1.1
       prebuild-install: 7.1.2
