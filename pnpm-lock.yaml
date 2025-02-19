@@ -21,8 +21,8 @@ importers:
         specifier: ^9.1.0
         version: 9.1.0(dotenv@8.6.0)
       fast-xml-parser:
-        specifier: ^4.5.1
-        version: 4.5.1
+        specifier: ^4.5.2
+        version: 4.5.2
       fastify:
         specifier: ^5.2.1
         version: 5.2.1
@@ -368,8 +368,8 @@ packages:
   fast-uri@3.0.3:
     resolution: {integrity: sha512-aLrHthzCjH5He4Z2H9YZ+v6Ujb9ocRuW6ZzkJQOrTxleEijANq4v1TsaPaVG1PZcuurEzrLcWRyYBYXD5cEiaw==}
 
-  fast-xml-parser@4.5.1:
-    resolution: {integrity: sha512-y655CeyUQ+jj7KBbYMc4FG01V8ZQqjN+gDYGJ50RtfsUB8iG9AmwmwoAgeKLJdmueKKMrH1RJ7yXHTSoczdv5w==}
+  fast-xml-parser@4.5.2:
+    resolution: {integrity: sha512-xmnYV9o0StIz/0ArdzmWTxn9oDy0lH8Z80/8X/TD2EUQKXY4DHxoT9mYBqgGIG17DgddCJtH1M6DriMbalNsAA==}
     hasBin: true
 
   fastify-plugin@5.0.1:
@@ -950,7 +950,7 @@ snapshots:
 
   fast-uri@3.0.3: {}
 
-  fast-xml-parser@4.5.1:
+  fast-xml-parser@4.5.2:
     dependencies:
       strnum: 1.0.5
 
