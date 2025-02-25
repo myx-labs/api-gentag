@@ -27,8 +27,8 @@ importers:
         specifier: ^5.2.1
         version: 5.2.1
       file-type:
-        specifier: ^20.1.0
-        version: 20.1.0
+        specifier: ^20.3.0
+        version: 20.3.0
       got:
         specifier: ^14.4.6
         version: 14.4.6
@@ -241,9 +241,9 @@ packages:
     resolution: {integrity: sha512-+PmQX0PiAYPMeVYe237LJAYvOMYW1j2rH5YROyS3b4CTVJum34HfRvKvAzozHAQG0TnHNdUfY9nCeUyRAs//cw==}
     engines: {node: '>=14.16'}
 
-  '@tokenizer/inflate@0.2.6':
-    resolution: {integrity: sha512-SdR/i05U7Xhnsq36iyIq/ZiGGw4PKzw4ww3bOq80Pjj4wyXpqyTcgrgdDdGlcatnlvzNJx8CQw3hp6QZvkUwhA==}
-    engines: {node: '>=16'}
+  '@tokenizer/inflate@0.2.7':
+    resolution: {integrity: sha512-MADQgmZT1eKjp06jpI2yozxaU9uVs4GzzgSL+uEq7bVcJ9V1ZXQkeGNql1fsSI0gMy1vhvNTNbUqrx+pZfJVmg==}
+    engines: {node: '>=18'}
 
   '@tokenizer/token@0.3.0':
     resolution: {integrity: sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==}
@@ -390,8 +390,8 @@ packages:
   fflate@0.8.2:
     resolution: {integrity: sha512-cPJU47OaAoCbg0pBvzsgpTPhmhqI5eJjh/JIu8tPj5q+T7iLvW/JAYUqmE7KOB4R1ZyEhzBaIQpQpardBF5z8A==}
 
-  file-type@20.1.0:
-    resolution: {integrity: sha512-XoxU+lETfCf+bYK3SXkxFusAvmtYQl1u/ZC4zw1DBLEsHUvh339uwYucgQnnSMz1mRCWYJrCzsbJJ95hsQbZ8A==}
+  file-type@20.3.0:
+    resolution: {integrity: sha512-7eYG8OCoBNNf7179DmAUA6HyXYfJO8CQnZkgusRIDKCHQBbYU5rqJC0k2yr0c+C22v4bFfKL+DKuOPSU78uuTA==}
     engines: {node: '>=18'}
 
   find-my-way@9.1.0:
@@ -807,7 +807,7 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@tokenizer/inflate@0.2.6':
+  '@tokenizer/inflate@0.2.7':
     dependencies:
       debug: 4.4.0
       fflate: 0.8.2
@@ -990,9 +990,9 @@ snapshots:
 
   fflate@0.8.2: {}
 
-  file-type@20.1.0:
+  file-type@20.3.0:
     dependencies:
-      '@tokenizer/inflate': 0.2.6
+      '@tokenizer/inflate': 0.2.7
       strtok3: 10.2.1
       token-types: 6.0.0
       uint8array-extras: 1.4.0
