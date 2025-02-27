@@ -33,8 +33,8 @@ importers:
         specifier: ^14.4.6
         version: 14.4.6
       image-size:
-        specifier: ^1.2.0
-        version: 1.2.0
+        specifier: ^2.0.0
+        version: 2.0.0
     devDependencies:
       '@types/dotenv-safe':
         specifier: ^8.1.6
@@ -434,8 +434,8 @@ packages:
   ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
 
-  image-size@1.2.0:
-    resolution: {integrity: sha512-4S8fwbO6w3GeCVN6OPtA9I5IGKkcDMPcKndtUlpJuCwu7JLjtj7JZpwqLuyY2nrmQT3AWsCJLSKPsc2mPBSl3w==}
+  image-size@2.0.0:
+    resolution: {integrity: sha512-HP07n1SpdIXGUL4VotUIOQz66MQOq8g7VN+Yj02YTVowqZScQ5i/JYU0+lkNr2pwt5j4hOpk94/UBV1ZCbS2fA==}
     engines: {node: '>=16.x'}
     hasBin: true
 
@@ -544,9 +544,6 @@ packages:
 
   pump@3.0.2:
     resolution: {integrity: sha512-tUPXtzlGM8FE3P0ZL6DVs/3P58k9nk8/jZeQCurTJylQA8qFYzHFfhBJkuqyE0FifOsQ0uKWekiZ5g8wtr28cw==}
-
-  queue@6.0.2:
-    resolution: {integrity: sha512-iHZWu+q3IdFZFX36ro/lKBkSvfkztY5Y7HMiPlOUjhupPcG2JMfst2KKEpu5XndviX/3UhFbRngUPNKtgvtZiA==}
 
   quick-format-unescaped@4.0.4:
     resolution: {integrity: sha512-tYC1Q1hgyRuHgloV/YXs2w15unPVh8qfu/qCTfhTYamaw7fyhumKa2yGpdSo87vY32rIclj+4fWYQXUMs9EHvg==}
@@ -1046,9 +1043,7 @@ snapshots:
 
   ieee754@1.2.1: {}
 
-  image-size@1.2.0:
-    dependencies:
-      queue: 6.0.2
+  image-size@2.0.0: {}
 
   inherits@2.0.4: {}
 
@@ -1155,10 +1150,6 @@ snapshots:
     dependencies:
       end-of-stream: 1.4.4
       once: 1.4.0
-
-  queue@6.0.2:
-    dependencies:
-      inherits: 2.0.4
 
   quick-format-unescaped@4.0.4: {}
 
