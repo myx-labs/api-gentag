@@ -27,8 +27,8 @@ importers:
         specifier: ^5.2.1
         version: 5.2.1
       file-type:
-        specifier: ^20.4.0
-        version: 20.4.0
+        specifier: ^20.4.1
+        version: 20.4.1
       got:
         specifier: ^14.4.6
         version: 14.4.6
@@ -390,8 +390,8 @@ packages:
   fflate@0.8.2:
     resolution: {integrity: sha512-cPJU47OaAoCbg0pBvzsgpTPhmhqI5eJjh/JIu8tPj5q+T7iLvW/JAYUqmE7KOB4R1ZyEhzBaIQpQpardBF5z8A==}
 
-  file-type@20.4.0:
-    resolution: {integrity: sha512-+NZeExsi4G6EWaMbSmvBeCoqsj9EqNvOj1o/0uPVPW4O51FSCmxFlNEp/PitsqBMCbax4cGoaYmnUK5FLTuG4g==}
+  file-type@20.4.1:
+    resolution: {integrity: sha512-hw9gNZXUfZ02Jo0uafWLaFVPter5/k2rfcrjFJJHX/77xtSDOfJuEFb6oKlFV86FLP1SuyHMW1PSk0U9M5tKkQ==}
     engines: {node: '>=18'}
 
   find-my-way@9.1.0:
@@ -520,8 +520,8 @@ packages:
     resolution: {integrity: sha512-wBowNApzd45EIKdO1LaU+LrMBwAcjfPaYtVzV3lmfM3gf8Z4CHZsiIqlM8TZZ8okYvh5A1cP6gTfCRQtwUpaUg==}
     engines: {node: '>=14.16'}
 
-  peek-readable@6.1.1:
-    resolution: {integrity: sha512-7QmvgRKhxM0E2PGV4ocfROItVode+ELI27n4q+lpufZ+tRKBu/pBP8WOmw9HXn2ui/AUizqtvaVQhcJrOkRqYg==}
+  peek-readable@7.0.0:
+    resolution: {integrity: sha512-nri2TO5JE3/mRryik9LlHFT53cgHfRK0Lt0BAZQXku/AW3E6XLt2GaY8siWi7dvW/m1z0ecn+J+bpDa9ZN3IsQ==}
     engines: {node: '>=18'}
 
   pino-abstract-transport@2.0.0:
@@ -633,8 +633,8 @@ packages:
   strnum@2.0.5:
     resolution: {integrity: sha512-YAT3K/sgpCUxhxNMrrdhtod3jckkpYwH6JAuwmUdXZsmzH1wUyzTMrrK2wYCEEqlKwrWDd35NeuUkbBy/1iK+Q==}
 
-  strtok3@10.2.1:
-    resolution: {integrity: sha512-Q2dTnW3UXokAvXmXvrvMoUj/me3LyJI76HNHeuGMh2o0As/vzd7eHV3ncLOyvu928vQIDbE7Vf9ldEnC7cwy1w==}
+  strtok3@10.2.2:
+    resolution: {integrity: sha512-Xt18+h4s7Z8xyZ0tmBoRmzxcop97R4BAh+dXouUDCYn+Em+1P3qpkUfI5ueWLT8ynC5hZ+q4iPEmGG1urvQGBg==}
     engines: {node: '>=18'}
 
   tar-fs@2.1.2:
@@ -987,10 +987,10 @@ snapshots:
 
   fflate@0.8.2: {}
 
-  file-type@20.4.0:
+  file-type@20.4.1:
     dependencies:
       '@tokenizer/inflate': 0.2.7
-      strtok3: 10.2.1
+      strtok3: 10.2.2
       token-types: 6.0.0
       uint8array-extras: 1.4.0
     transitivePeerDependencies:
@@ -1107,7 +1107,7 @@ snapshots:
 
   p-cancelable@4.0.1: {}
 
-  peek-readable@6.1.1: {}
+  peek-readable@7.0.0: {}
 
   pino-abstract-transport@2.0.0:
     dependencies:
@@ -1222,10 +1222,10 @@ snapshots:
 
   strnum@2.0.5: {}
 
-  strtok3@10.2.1:
+  strtok3@10.2.2:
     dependencies:
       '@tokenizer/token': 0.3.0
-      peek-readable: 6.1.1
+      peek-readable: 7.0.0
 
   tar-fs@2.1.2:
     dependencies:
