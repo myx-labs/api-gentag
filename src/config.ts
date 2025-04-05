@@ -9,4 +9,7 @@ export default {
         : 3000,
     key: process.env.AUTHENTICATION_KEY as string,
   },
+  credentials: {
+    roblox: process.env.ROBLOX_API_KEY as string,
+  },
 };
