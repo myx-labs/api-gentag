@@ -47,7 +47,9 @@ function fetchAssetFromId(id: number) {
 }
 
 async function getImageIdFromAssetId(id: number) {
-  const text = await fetchAssetFromId(id).text();
+  const locationJson: any = await fetchAssetFromId(id).json();
+  const location: string = locationJson.location;
+  const text = await got(location).text();
   const parser = new XMLParser({
     ignoreAttributes: false,
   });
