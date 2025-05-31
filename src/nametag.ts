@@ -109,67 +109,94 @@ async function drawTextWithCustomCharacters(
 
     const imagePath = path.join(dir, `${charFilenameCandidate}${extension}`);
     let elementProcessed = false;
+    let loadedImg: pkg.Image | null = null;
+    let currentScaledWidth = 0;
+    let isPlaceholder = false;
 
     try {
+      // 1. Attempt to load primary image
       if (fs.existsSync(imagePath)) {
         const img = await loadImage(imagePath);
         const aspectRatio = img.width / img.height;
-        const scaledWidth = style.targetHeight * aspectRatio; // Use style.targetHeight for actual images
-        loadedElements.push({
-          img,
-          width: scaledWidth,
-          height: style.targetHeight,
-          originalChar: char,
-          isSpacingPlaceholder: false,
-        });
-        cumulativeWidthOfElements += scaledWidth;
+        currentScaledWidth = targetHeight * aspectRatio;
+        loadedImg = img;
         elementProcessed = true;
-      } else {
-        // Primary image not found, try fallback character image
-        if (
-          style.fallbackChar &&
-          charFilenameCandidate !== style.fallbackChar
-        ) {
-          const fallbackImagePath = path.join(
-            dir,
-            `${style.fallbackChar}${extension}`
-          );
-          if (fs.existsSync(fallbackImagePath)) {
-            console.warn(
-              `Character image for '${char}' (path: ${imagePath}) not found. Using fallback '${style.fallbackChar}'.`
-            );
-            const img = await loadImage(fallbackImagePath);
-            const aspectRatio = img.width / img.height;
-            const scaledWidth = style.targetHeight * aspectRatio;
-            loadedElements.push({
-              img,
-              width: scaledWidth,
-              height: style.targetHeight,
-              originalChar: char,
-              isSpacingPlaceholder: false,
-            });
-            cumulativeWidthOfElements += scaledWidth;
-            elementProcessed = true;
-          }
-        }
+      }
 
-        // If not processed by primary or fallback image
-        if (!elementProcessed) {
+      // 2. If primary image not loaded, attempt to load fallback image
+      if (
+        !elementProcessed &&
+        style.fallbackChar &&
+        charFilenameCandidate !== style.fallbackChar
+      ) {
+        const fallbackImagePath = path.join(
+          dir,
+          `${style.fallbackChar}${extension}`
+        );
+        if (fs.existsSync(fallbackImagePath)) {
           console.warn(
-            `Character image for '${char}' (path: ${imagePath}) and fallback not found. Skipping char visuals and width contribution.`
+            `Character image for '${charFilenameCandidate}' (original char: '${char}') not found. Using fallback '${style.fallbackChar}'.`
           );
-          // Character contributes no width and no visual if this branch is hit
+          const img = await loadImage(fallbackImagePath);
+          const aspectRatio = img.width / img.height;
+          currentScaledWidth = targetHeight * aspectRatio;
+          loadedImg = img;
+          elementProcessed = true;
         }
       }
+
+      // 3. If no image has been loaded (neither primary nor fallback)
+      if (!elementProcessed) {
+        if (char === " ") {
+          // For spaces whose images are missing, provide a placeholder width
+          const spacePlaceholderWidth =
+            style.missingCharacterSpacing !== undefined
+              ? style.missingCharacterSpacing
+              : interElementSpacing; // Default to inter-element spacing
+          if (spacePlaceholderWidth > 0) {
+            currentScaledWidth = spacePlaceholderWidth;
+            loadedImg = null; // Explicitly null for placeholder
+            isPlaceholder = true; // Mark that this width is for a placeholder
+            elementProcessed = true; // Mark as processed so it gets added
+            console.warn(
+              `Image for space character ('${char}', candidate: '${charFilenameCandidate}') not found. Using placeholder width: ${currentScaledWidth}.`
+            );
+          } else {
+            console.warn(
+              `Image for space character ('${char}', candidate: '${charFilenameCandidate}') not found, and placeholder width is <= 0. Space will be skipped.`
+            );
+            // elementProcessed remains false, so it's skipped
+          }
+        } else {
+          // For non-space characters, if primary and fallback are missing, they are skipped.
+          console.warn(
+            `Character image for '${charFilenameCandidate}' (original char: '${char}') and fallback not found. Skipping char visuals and width contribution.`
+          );
+          // elementProcessed remains false, character is skipped
+        }
+      }
+
+      // If an element was processed (either image loaded or space placeholder created with width > 0)
+      if (elementProcessed) {
+        loadedElements.push({
+          img: loadedImg,
+          width: currentScaledWidth,
+          height: targetHeight, // Use targetHeight consistently
+          originalChar: char,
+          isSpacingPlaceholder: isPlaceholder,
+        });
+        cumulativeWidthOfElements += currentScaledWidth;
+      }
+      // If elementProcessed is still false here, it means the character was skipped.
     } catch (err) {
       console.error(
-        `Error processing character '${char}' (intended path: ${imagePath}):`,
+        `Error processing character '${char}' (intended image path for candidate '${charFilenameCandidate}': ${imagePath}):`,
         err
       );
-      // If error occurs during loading, character will have no visual or width contribution.
       console.warn(
-        `Due to error processing character '${char}' (intended path: ${imagePath}), it will be skipped (no visual or width contribution).`
+        `Due to error processing character '${char}', it will be skipped (no visual or width contribution).`
       );
+      // No element is added, no width contributed if an error occurs
     }
   }
 
