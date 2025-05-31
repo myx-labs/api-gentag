@@ -257,7 +257,7 @@ export async function createNametagImageBuffer(
   template: NametagTemplate,
   name: string,
   additionalAssets: RobloxAsset[] = []
-): Promise<Buffer> {
+) {
   const canvas = createCanvas(128, 128);
   const ctx = canvas.getContext("2d");
   const templateAssets = template.assets;
@@ -344,37 +344,31 @@ export async function createNametag(
   templateIndex: number = 0,
   preview: boolean = false,
   tShirtIDs: number[] = []
-): Promise<Buffer | null> {
-  try {
-    const template = await getTemplateFromIndex(templateIndex);
-    if (!template) {
-      console.error(`Template with index ${templateIndex} not found.`);
-      return null;
-    }
-
-    const additionalAssets: RobloxAsset[] = [];
-
-    if (preview && template.assets.previewAsset) {
-      additionalAssets.push(template.assets.previewAsset);
-    }
-
-    if (tShirtIDs.length > 0) {
-      const assetPromises = tShirtIDs.map((id) => getAssetFromId(id));
-      const settledAssets = await Promise.allSettled(assetPromises);
-
-      settledAssets.forEach((promise) => {
-        if (promise.status === "fulfilled" && promise.value) {
-          additionalAssets.push(promise.value);
-        } else if (promise.status === "rejected") {
-          console.warn("Failed to load a t-shirt asset:", promise.reason);
-        }
-      });
-    }
-    return createNametagImageBuffer(template, name, additionalAssets);
-  } catch (error) {
-    console.error("Error in createNametag:", error);
-    return null;
+) {
+  const template = await getTemplateFromIndex(templateIndex);
+  if (!template) {
+    throw new Error(`Template with index ${templateIndex} not found.`);
   }
+
+  const additionalAssets: RobloxAsset[] = [];
+
+  if (preview && template.assets.previewAsset) {
+    additionalAssets.push(template.assets.previewAsset);
+  }
+
+  if (tShirtIDs.length > 0) {
+    const assetPromises = tShirtIDs.map((id) => getAssetFromId(id));
+    const settledAssets = await Promise.allSettled(assetPromises);
+
+    settledAssets.forEach((promise) => {
+      if (promise.status === "fulfilled" && promise.value) {
+        additionalAssets.push(promise.value);
+      } else if (promise.status === "rejected") {
+        console.warn("Failed to load a t-shirt asset:", promise.reason);
+      }
+    });
+  }
+  return createNametagImageBuffer(template, name, additionalAssets);
 }
 
 export async function getTemplateFromIndex(
