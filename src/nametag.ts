@@ -153,30 +153,12 @@ async function drawTextWithCustomCharacters(
           }
         }
 
-        // If not processed by primary or fallback image, try default spacing
+        // If not processed by primary or fallback image
         if (!elementProcessed) {
-          if (
-            style.missingCharacterSpacing &&
-            style.missingCharacterSpacing > 0
-          ) {
-            console.warn(
-              `Character image for '${char}' (path: ${imagePath}) and fallback not found. Using default spacing: ${style.missingCharacterSpacing}px.`
-            );
-            loadedElements.push({
-              img: null,
-              width: style.missingCharacterSpacing,
-              height: style.targetHeight, // Keep height consistent for vertical alignment logic
-              originalChar: char,
-              isSpacingPlaceholder: true,
-            });
-            cumulativeWidthOfElements += style.missingCharacterSpacing;
-            elementProcessed = true; // Mark as processed by spacing
-          } else {
-            console.warn(
-              `Character image for '${char}' (path: ${imagePath}), fallback, and default spacing not configured. Skipping char visuals and width contribution.`
-            );
-            // Character contributes no width and no visual if this branch is hit
-          }
+          console.warn(
+            `Character image for '${char}' (path: ${imagePath}) and fallback not found. Skipping char visuals and width contribution.`
+          );
+          // Character contributes no width and no visual if this branch is hit
         }
       }
     } catch (err) {
@@ -184,24 +166,10 @@ async function drawTextWithCustomCharacters(
         `Error processing character '${char}' (intended path: ${imagePath}):`,
         err
       );
-      // If error occurs during loading, attempt to use missingCharacterSpacing as a last resort
-      if (style.missingCharacterSpacing && style.missingCharacterSpacing > 0) {
-        console.warn(
-          `Due to error, using default spacing for '${char}': ${style.missingCharacterSpacing}px.`
-        );
-        loadedElements.push({
-          img: null,
-          width: style.missingCharacterSpacing,
-          height: style.targetHeight,
-          originalChar: char,
-          isSpacingPlaceholder: true,
-        });
-        cumulativeWidthOfElements += style.missingCharacterSpacing;
-      } else {
-        console.warn(
-          `Due to error and no default spacing for '${char}', character will have no visual or width contribution.`
-        );
-      }
+      // If error occurs during loading, character will have no visual or width contribution.
+      console.warn(
+        `Due to error processing character '${char}' (intended path: ${imagePath}), it will be skipped (no visual or width contribution).`
+      );
     }
   }
 
