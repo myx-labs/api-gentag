@@ -14,7 +14,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/dotenv-safe": "^9.1.0",
-    "@types/node": "^22.15.29",
+    "@types/node": "^22.18.12",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3"
   },
