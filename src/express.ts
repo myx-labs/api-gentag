@@ -48,20 +48,42 @@ router.get("/nametag/options", async (req, res) => {
   }
 });
 
-router.get(
+const nameParamsSchema = Type.Object(
+  { name: Type.String() },
+  { additionalProperties: false }
+);
+
+const nameIndexParamsSchema = Type.Object(
+  {
+    name: Type.String(),
+    index: Type.Number(),
+  },
+  { additionalProperties: false }
+);
+
+const indexParamsSchema = Type.Object(
+  { index: Type.Number() },
+  { additionalProperties: false }
+);
+
+const shirtQuerySchema = Type.Object(
+  {
+    tShirtIDs: Type.Optional(Type.String()),
+    assetId: Type.Optional(Type.Array(Type.Number())),
+  },
+  { additionalProperties: false }
+);
+
+router.get<{ Params: { name: string } }>(
   "/nametag/:name",
   {
     schema: {
-      params: Type.Strict(
-        Type.Object({
-          name: Type.String(),
-        })
-      ),
+      params: nameParamsSchema,
     },
   },
   async (req, res) => {
     try {
-      const name: string = req.params.name as any;
+      const name: string = req.params.name;
       const imageBuffer = await createNametag(name);
       const fileType = await fileTypeFromBuffer(imageBuffer);
       if (typeof fileType === "undefined") {
@@ -94,22 +116,15 @@ function parseLegacyShirtIDs(jsonString: string | undefined) {
   return ids;
 }
 
-router.get(
+router.get<{
+  Params: { name: string; index: number };
+  Querystring: { tShirtIDs?: string; assetId?: number[] };
+}>(
   "/nametag/create/:index/:name",
   {
     schema: {
-      params: Type.Strict(
-        Type.Object({
-          name: Type.String(),
-          index: Type.Number(),
-        })
-      ),
-      querystring: Type.Strict(
-        Type.Object({
-          tShirtIDs: Type.Optional(Type.String()),
-          assetId: Type.Optional(Type.Array(Type.Number())),
-        })
-      ),
+      params: nameIndexParamsSchema,
+      querystring: shirtQuerySchema,
     },
   },
   async (req, res) => {
@@ -153,22 +168,15 @@ router.get(
   }
 );
 
-router.get(
+router.get<{
+  Params: { name: string; index: number };
+  Querystring: { tShirtIDs?: string; assetId?: number[] };
+}>(
   "/nametag/preview/:index/:name",
   {
     schema: {
-      params: Type.Strict(
-        Type.Object({
-          name: Type.String(),
-          index: Type.Number(),
-        })
-      ),
-      querystring: Type.Strict(
-        Type.Object({
-          tShirtIDs: Type.Optional(Type.String()),
-          assetId: Type.Optional(Type.Array(Type.Number())),
-        })
-      ),
+      params: nameIndexParamsSchema,
+      querystring: shirtQuerySchema,
     },
   },
   async (req, res) => {
@@ -212,15 +220,11 @@ router.get(
   }
 );
 
-router.get(
+router.get<{ Params: { index: number } }>(
   "/nametag/data/:index",
   {
     schema: {
-      params: Type.Strict(
-        Type.Object({
-          index: Type.Number(),
-        })
-      ),
+      params: indexParamsSchema,
     },
   },
   async (req, res) => {
