@@ -27,8 +27,8 @@ importers:
         specifier: ^5.6.1
         version: 5.6.1
       file-type:
-        specifier: ^21.0.0
-        version: 21.0.0
+        specifier: ^22.0.1
+        version: 22.0.1
       got:
         specifier: ^14.6.1
         version: 14.6.1
@@ -51,8 +51,8 @@ importers:
 
 packages:
 
-  '@borewit/text-codec@0.1.1':
-    resolution: {integrity: sha512-5L/uBxmjaCIX5h8Z+uu+kA9BQLkc/Wl06UGR5ajNRxu+/XjonB5i8JpgFMrPj3LXTCPA0pv8yxUvbUi+QthGGA==}
+  '@borewit/text-codec@0.2.2':
+    resolution: {integrity: sha512-DDaRehssg1aNrH4+2hnj1B7vnUGEjU6OIlyRdkMd0aUdIUvKXrJfXsy8LVtXAy7DRvYVluWbMspsRhz2lcW0mQ==}
 
   '@esbuild/aix-ppc64@0.25.11':
     resolution: {integrity: sha512-Xt1dOL13m8u0WE8iplx9Ibbm+hFAO0GsU2P34UNoDGvZYkY8ifSiy6Zuc1lYxfG7svWE2fzqCUmFp5HCn51gJg==}
@@ -253,8 +253,8 @@ packages:
     resolution: {integrity: sha512-+PmQX0PiAYPMeVYe237LJAYvOMYW1j2rH5YROyS3b4CTVJum34HfRvKvAzozHAQG0TnHNdUfY9nCeUyRAs//cw==}
     engines: {node: '>=14.16'}
 
-  '@tokenizer/inflate@0.2.7':
-    resolution: {integrity: sha512-MADQgmZT1eKjp06jpI2yozxaU9uVs4GzzgSL+uEq7bVcJ9V1ZXQkeGNql1fsSI0gMy1vhvNTNbUqrx+pZfJVmg==}
+  '@tokenizer/inflate@0.4.1':
+    resolution: {integrity: sha512-2mAv+8pkG6GIZiF1kNg1jAjh27IDxEPKwdGul3snfztFerfPGI1LjDezZp3i7BElXompqEtPmoPx6c2wgtWsOA==}
     engines: {node: '>=18'}
 
   '@tokenizer/token@0.3.0':
@@ -402,12 +402,9 @@ packages:
   fastq@1.19.1:
     resolution: {integrity: sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==}
 
-  fflate@0.8.2:
-    resolution: {integrity: sha512-cPJU47OaAoCbg0pBvzsgpTPhmhqI5eJjh/JIu8tPj5q+T7iLvW/JAYUqmE7KOB4R1ZyEhzBaIQpQpardBF5z8A==}
-
-  file-type@21.0.0:
-    resolution: {integrity: sha512-ek5xNX2YBYlXhiUXui3D/BXa3LdqPmoLJ7rqEx2bKJ7EAUEfmXgW0Das7Dc6Nr9MvqaOnIqiPV0mZk/r/UpNAg==}
-    engines: {node: '>=20'}
+  file-type@22.0.1:
+    resolution: {integrity: sha512-ww5Mhre0EE+jmBvOXTmXAbEMuZE7uX4a3+oRCQFNj8w++g3ev913N6tXQz0XTXbueQ5TWQfm6BdaViEHHn8bhA==}
+    engines: {node: '>=22'}
 
   find-my-way@9.3.0:
     resolution: {integrity: sha512-eRoFWQw+Yv2tuYlK2pjFS2jGXSxSppAs3hSQjfxVKxM5amECzIgYYc1FEI8ZmhSh/Ig+FrKEz43NLRKJjYCZVg==}
@@ -539,6 +536,7 @@ packages:
   prebuild-install@7.1.3:
     resolution: {integrity: sha512-8Mf2cbV7x1cXPUILADGI3wuhfqWvtiLA1iclTDbFRZkgRQS0NqsPZphna9V+HyTEadheuPmjaJMsbzKQFOzLug==}
     engines: {node: '>=10'}
+    deprecated: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
     hasBin: true
 
   process-warning@4.0.1:
@@ -642,8 +640,8 @@ packages:
   strnum@2.1.1:
     resolution: {integrity: sha512-7ZvoFTiCnGxBtDqJ//Cu6fWtZtc7Y3x+QOirG15wztbdngGSkht27o2pyGWrVy0b4WAy3jbKmnoK6g5VlVNUUw==}
 
-  strtok3@10.3.4:
-    resolution: {integrity: sha512-KIy5nylvC5le1OdaaoCJ07L+8iQzJHGH6pWDuzS+d07Cu7n1MZ2x26P8ZKIWfbK02+XIL8Mp4RkWeqdUCrDMfg==}
+  strtok3@10.3.5:
+    resolution: {integrity: sha512-ki4hZQfh5rX0QDLLkOCj+h+CVNkqmp/CMf8v8kZpkNVK6jGQooMytqzLZYUVYIZcFZ6yDB70EfD8POcFXiF5oA==}
     engines: {node: '>=18'}
 
   tar-fs@2.1.4:
@@ -660,8 +658,8 @@ packages:
     resolution: {integrity: sha512-/m8M+2BJUpoJdgAHoG+baCwBT+tf2VraSfkBgl0Y00qIWt41DJ8R5B8nsEw0I58YwF5IZH6z24/2TobDKnqSWw==}
     engines: {node: '>=12'}
 
-  token-types@6.1.1:
-    resolution: {integrity: sha512-kh9LVIWH5CnL63Ipf0jhlBIy0UsrMj/NJDfpsy1SqOXlLKEVyXXYrnFxFT1yOOYVGBSApeVnjPw/sBz5BfEjAQ==}
+  token-types@6.1.2:
+    resolution: {integrity: sha512-dRXchy+C0IgK8WPC6xvCHFRIWYUbqqdEIKPaKo/AcTUNzwLTK6AH7RjdLWsEZcAN/TBdtfUw3PYEgPr5VPr6ww==}
     engines: {node: '>=14.16'}
 
   tsx@4.20.6:
@@ -699,7 +697,7 @@ packages:
 
 snapshots:
 
-  '@borewit/text-codec@0.1.1': {}
+  '@borewit/text-codec@0.2.2': {}
 
   '@esbuild/aix-ppc64@0.25.11':
     optional: true
@@ -823,11 +821,10 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@tokenizer/inflate@0.2.7':
+  '@tokenizer/inflate@0.4.1':
     dependencies:
       debug: 4.4.3
-      fflate: 0.8.2
-      token-types: 6.1.1
+      token-types: 6.1.2
     transitivePeerDependencies:
       - supports-color
 
@@ -1006,13 +1003,11 @@ snapshots:
     dependencies:
       reusify: 1.1.0
 
-  fflate@0.8.2: {}
-
-  file-type@21.0.0:
+  file-type@22.0.1:
     dependencies:
-      '@tokenizer/inflate': 0.2.7
-      strtok3: 10.3.4
-      token-types: 6.1.1
+      '@tokenizer/inflate': 0.4.1
+      strtok3: 10.3.5
+      token-types: 6.1.2
       uint8array-extras: 1.5.0
     transitivePeerDependencies:
       - supports-color
@@ -1240,7 +1235,7 @@ snapshots:
 
   strnum@2.1.1: {}
 
-  strtok3@10.3.4:
+  strtok3@10.3.5:
     dependencies:
       '@tokenizer/token': 0.3.0
 
@@ -1265,9 +1260,9 @@ snapshots:
 
   toad-cache@3.7.0: {}
 
-  token-types@6.1.1:
+  token-types@6.1.2:
     dependencies:
-      '@borewit/text-codec': 0.1.1
+      '@borewit/text-codec': 0.2.2
       '@tokenizer/token': 0.3.0
       ieee754: 1.2.1
 
