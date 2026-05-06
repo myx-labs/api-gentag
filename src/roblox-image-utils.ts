@@ -47,7 +47,7 @@ async function fetchAssetInfo(
   const assetResponse = await got(initialResponse.location, {
     timeout: { request: timeoutDuration },
   });
-  const assetBuffer = assetResponse.rawBody;
+  const assetBuffer = Buffer.from(assetResponse.rawBody);
 
   const fileType = await fileTypeFromBuffer(assetBuffer);
   if (fileType?.mime.startsWith("image/")) {
@@ -105,17 +105,21 @@ async function fetchAssetInfo(
             `Image asset ID ${finalAssetIdForImage} (from XML content URL: ${contentUrl}) did not yield a location.`
           );
         }
-        finalImageBuffer = await got(imageAssetApiResponse.location, {
-          timeout: { request: timeoutDuration },
-        }).buffer();
+        finalImageBuffer = Buffer.from(
+          await got(imageAssetApiResponse.location, {
+            timeout: { request: timeoutDuration },
+          }).buffer()
+        );
       } else if (
         contentUrl.startsWith("http://") ||
         contentUrl.startsWith("https://")
       ) {
         // Direct HTTP/HTTPS URL from XML (e.g., CDN link)
-        finalImageBuffer = await got(contentUrl, {
-          timeout: { request: timeoutDuration },
-        }).buffer();
+        finalImageBuffer = Buffer.from(
+          await got(contentUrl, {
+            timeout: { request: timeoutDuration },
+          }).buffer()
+        );
         // For direct URLs from XML, the 'finalAssetIdForImage' is the original requestedId,
         // as the direct URL is considered a representation of that original asset.
         finalAssetIdForImage = requestedId;

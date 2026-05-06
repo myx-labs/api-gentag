@@ -6,6 +6,7 @@
     "jsx": "react",
     "strict": true,
     "preserveConstEnums": true,
+    "rootDir": "./src",
     "outDir": "./dist",
     "moduleResolution": "Node16",
     "skipLibCheck": true,
