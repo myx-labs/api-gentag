@@ -21,7 +21,7 @@
   "dependencies": {
     "@fastify/cors": "^11.1.0",
     "@fastify/type-provider-typebox": "^6.1.0",
-    "canvas": "3.2.0",
+    "canvas": "3.2.3",
     "dotenv-safe": "^9.1.0",
     "fast-xml-parser": "^5.7.2",
     "fastify": "^5.6.1",
